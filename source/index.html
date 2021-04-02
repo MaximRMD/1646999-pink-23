@@ -7,8 +7,8 @@
 </head>
 
 <body class="page__body">
-  <header class="page-header">
-    <a class="page-header__logo">
+  <header class="header">
+    <a class="header__logo">
       <svg width="147" height="40" viewBox="0 0 147 40" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M72.1933 18.4249C72.1932 18.0921 72.3255 17.7726 72.562 17.5345C72.7985 17.2965 73.1204 17.1589 73.4588 17.1511H80.6703C85.7826 17.1511 89.1473 19.827 89.1473 24.211V24.2703C89.1473 29.069 85.0695 31.5573 80.2484 31.5573H74.7544V38.2913C74.7702 38.466 74.7488 38.6421 74.6916 38.8082C74.6344 38.9743 74.5426 39.1269 74.4222 39.2563C74.3017 39.3856 74.1552 39.489 73.992 39.5596C73.8287 39.6303 73.6522 39.6668 73.4738 39.6668C73.2954 39.6668 73.119 39.6303 72.9557 39.5596C72.7925 39.489 72.6459 39.3856 72.5255 39.2563C72.405 39.1269 72.3133 38.9743 72.2561 38.8082C72.1989 38.6421 72.1775 38.466 72.1933 38.2913V18.4249ZM80.3489 29.2863C84.0952 29.2863 86.556 27.3115 86.556 24.3493V24.29C86.556 21.1106 84.1354 19.4616 80.5297 19.4616H74.8047V29.2468L80.3489 29.2863Z"
@@ -47,32 +47,30 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a class="#">
+            <a class="site__link" href="#">
               Главная
             </a>
           </li>
           <li class="site-list__item">
-            <a class="#">
+            <a class="site__link" href="#">
               Фотографии
             </a>
           </li>
           <li class="site-list__item">
-            <a class="#">
+            <a class="site__link" href="#">
               Конкурс
             </a>
           </li>
           <li class="site-list__item">
-            <a class="https://htmlacademy.ru">
+            <a class="site__link" href="https://htmlacademy.ru">
               HTML Academy
             </a>
           </li>
         </ul>
       </div>
     </nav>
-  </header>
-  <main class="page-main">
     <div>
-      <h1 class="main-title"> Взгляните на жизнь иначе!</h1>
+      <p class="main-title"> Взгляните на жизнь иначе!</p>
       <a class="download button">Скачать приложение</a>
       <div class="available-OS">
         <svg class="OS apple" width="47" height="56" viewBox="0 0 47 56" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -105,27 +103,30 @@
       </div>
       <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
     </div>
+  </header>
+
+  <main class="page-main">
     <section class="advantages">
-      <div class="advantages-block">
-        <ul class="advantages-list">
-          <li class="advantages-item">
-            <img src="" class="advantages-illustration" alt="">
-            <h3 class="advantages-title title">Поднимает настроение</h3>
-            <p class="advantages-title__subtitle subtitle"> Приложение позволит вам победить осеннюю хандру и депрессию
+      <div class="advantages__block container">
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <img src="" class="advantages__illustration" alt="">
+            <h3 class="advantages__title title">Поднимает настроение</h3>
+            <p class="advantages__subtitle subtitle"> Приложение позволит вам победить осеннюю хандру и депрессию
               буквально в несколько кликов!</p>
           </li>
 
           <li class="advantages-item">
-            <img src="" class="advantages-illustration" alt="">
-            <h3 class="advantages-title title">Меняет мир вокруг</h3>
-            <p class="advantages-title__subtitle subtitle">Сделайте снимок и украсьте его смайликом или текстовой
+            <img src="" class="advantages__illustration" alt="">
+            <h3 class="advantages__title title">Меняет мир вокруг</h3>
+            <p class="advantages__subtitle subtitle">Сделайте снимок и украсьте его смайликом или текстовой
               подписью, чтобы усилить эффект</p>
           </li>
 
           <li class="advantages-item">
-            <img src="" class="advantages-illustration" alt="">
-            <h3 class="advantages-title title">Заводит новых друзей</h3>
-            <p class="advantages-title__subtitle subtitle">Ставьте лайки, комментируйте, делитесь фотографиями с
+            <img src="" class="advantages__illustration" alt="">
+            <h3 class="advantages__title title">Заводит новых друзей</h3>
+            <p class="advantages__subtitle subtitle">Ставьте лайки, комментируйте, делитесь фотографиями с
               друзьями и заводите новых</p>
           </li>
         </ul>
@@ -133,7 +134,7 @@
     </section>
 
     <section class="effect">
-      <div class="effect-block">
+      <div class="effect-block container">
         <h1 class="effect__title">Эффект на 24 часа!</h1>
         <p class="effect__subtitle">Британские ученые провели исследования и доказали,
           что положительный эффект от использования приложения длится целые сутки!</p>
@@ -142,7 +143,7 @@
     </section>
 
     <section class="reviews">
-      <div class="reviews__wrapper">
+      <div class="reviews__wrapper container">
         <svg width="79" height="63" viewBox="0 0 79 63" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M35.1468 6.97257L30.8388 0C28.3886 1.48142 0 12.0588 0 39.1293C0 46.2698 0.341426 63 18.9793 63C30.2162 63 32.9778 52.8473 32.9778 49.5783C32.9778 27.8508 11.5081 35.5838 11.5081 35.5838C11.5081 17.7771 31.3911 9.06631 35.1468 6.97257Z"
@@ -159,7 +160,7 @@
       </div>
     </section>
     <section class="price">
-      <div class="price-wrapper">
+      <div class="price-wrapper container">
         <table class="price-list">
           <tr class="price__item">
             <th></th>
@@ -225,7 +226,7 @@
       </div>
     </section>
     <section class="connection">
-      <div class="connection__blocks">
+      <div class="connection__blocks container">
         <h1 class="connection__title">Остались вопросы?
           Свяжитесь с нами!</h1>
         <div class="connection__call">
@@ -236,41 +237,46 @@
         </div>
         <div class="connection__address">
           <h2 class="connection__subtitle">Приезжайте в гости:</h2>
-          <a class="connection__address" href="#">ул. Большая
+          <a class="connection__address-link" href="#">ул. Большая
             Конюшенная, 19/8</a>
         </div>
         <div class="connection__address">
           <h2 class="connection__subtitle">Пишите:</h2>
-          <a class="connection__address" href="#">mail@htmlacademy.ru</a>
+          <a class="connection__address-link" href="#">mail@htmlacademy.ru</a>
         </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="footer-blocks">
-    <div class="footer-logo__pink">
-
-    </div>
-    <div class="footer__button">
-      <ul class="footer__list">
-        <li class="footer__item footer__item-twit">
-          <a href="#">twitter</a>
-        </li>
-        <li class="footer__item footer__item-fb">
-          <a href="#">Facebook</a>
-        </li>
-        <li class="footer__item footer__item-you">
-          <a href="#">youtube</a>
-        </li>
-      </ul>
-    </div>
-    <div class="developed">
-      <h3 class="developed-title"><span><svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#D22856"/>
-        </svg></span>Разработано</h3>
-    </div>
+    <div class="container">
+      <div class="footer-blocks">
+        <div class="footer__logo pink">
+        </div>
+        <div class="footer__button">
+          <ul class="footer__list">
+            <li class="footer__item footer__item-twit">
+              <a href="#">twitter</a>
+            </li>
+            <li class="footer__item footer__item-fb">
+              <a href="#">Facebook</a>
+            </li>
+            <li class="footer__item footer__item-you">
+              <a href="#">youtube</a>
+            </li>
+          </ul>
+        </div>
+        <div class="developed">
+          <h3 class="developed__title"><span><svg width="27" height="34" viewBox="0 0 27 34" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"
+                  fill="#D22856" />
+              </svg></span>Разработано</h3>
+        </div>
+      </div>
     </div>
   </footer>
 </body>
+
 </html>
