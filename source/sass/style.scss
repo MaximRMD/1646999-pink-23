@@ -1,1 +1,241 @@
 // Начните писать стили здесь
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+
+
+$variable-pink: #D22856;
+$variable-dark-gray: #283645;
+$variable-light-gray: #EFEFEF;
+$variable-middle-gray: #F2F2F2;
+$variable-white: #FFFFFF;
+
+.container {
+  width: 940px;
+  margin: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.page {
+  font-family: "Open sans";
+  height: 100%;
+}
+
+.page-body {}
+
+.main-title {
+  width: 300px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 68px;
+  color: var($variable-white);
+}
+
+.main-block {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+.download {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 18px;
+  text-decoration: none;
+  color: #283645;
+  border: solid 3px;
+  border-radius: 29px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  display: inline-block;
+}
+
+.advantages__offer {
+  margin: 0px;
+  width: 780px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 68px;
+}
+
+.advantages__title {
+  width: 240px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+
+}
+
+.advantages__subtitle {
+width: 252px;
+text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.advantages__list {
+  list-style: none;
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+}
+
+.advantages__block{
+  margin-bottom: 174px;
+}
+
+.effect-block{
+  margin-bottom: 192px;
+}
+
+.effect__title {
+width: 298px;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.effect__subtitle {
+  width: 534px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 47px;
+
+}
+
+.effect__link {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #D22856;
+
+}
+
+.quotes{
+  margin-left: 560px;
+}
+
+.reviews__text {
+  width: 688px;
+  margin-left: 256px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.reviews__autor-name {
+  margin-left: 494px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.price__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+}
+
+.price__title {}
+
+.connection__blocks{
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.connection__title {
+  margin-left: 368px;
+  width: 492px;
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 68px;
+  color: #283645;
+}
+
+.connection__subtitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #283645;
+}
+
+.link {
+  color: #D22856;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.developed__title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.reviews__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+}
+
+.access {
+
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+
+.header {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%100%;
+  height: 110px;
+}
+
+.site-list__item {
+  list-style: none;
+
+}
+
+.site__link {
+  color: #FFFFFF;
+  padding-left: 50px;
+  font-family: Open sans;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 18px;
+
+}
+
+  .site-list {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+}
+
+.footer__list{
+  list-style: none;
+
+}
+
+.footer__item{
+   border: 3px solid #E5E5E5;
+   display: inline-block;
+   border-radius: 50%;
+
+}
