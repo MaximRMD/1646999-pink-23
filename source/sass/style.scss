@@ -2,13 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
 
-
-$variable-pink: #D22856;
-$variable-dark-gray: #283645;
-$variable-light-gray: #EFEFEF;
-$variable-middle-gray: #F2F2F2;
-$variable-white: #FFFFFF;
-
 .container {
   width: 940px;
   margin: 0;
@@ -73,8 +66,8 @@ $variable-white: #FFFFFF;
 }
 
 .advantages__subtitle {
-width: 252px;
-text-align: center;
+  width: 252px;
+  text-align: center;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
@@ -87,16 +80,16 @@ text-align: center;
   margin: 0px;
 }
 
-.advantages__block{
+.advantages__block {
   margin-bottom: 174px;
 }
 
-.effect-block{
+.effect-block {
   margin-bottom: 192px;
 }
 
 .effect__title {
-width: 298px;
+  width: 298px;
   font-size: 30px;
   line-height: 30px;
   font-weight: 700;
@@ -115,11 +108,11 @@ width: 298px;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-  color: #D22856;
+  color: #d22856;
 
 }
 
-.quotes{
+.quotes {
   margin-left: 560px;
 }
 
@@ -149,7 +142,7 @@ width: 298px;
 
 .price__title {}
 
-.connection__blocks{
+.connection__blocks {
   display: flex;
 
   justify-content: space-between;
@@ -172,7 +165,7 @@ width: 298px;
 }
 
 .link {
-  color: #D22856;
+  color: #d22856;
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
@@ -202,40 +195,37 @@ width: 298px;
 .header {
   display: flex;
   background-color: rgba(0, 0, 0, 0.3);
-  width: 100%100%;
+  width: 100%;
   height: 110px;
 }
 
 .site-list__item {
   list-style: none;
-
 }
 
 .site__link {
-  color: #FFFFFF;
+  color: #ffffff;
   padding-left: 50px;
   font-family: Open sans;
   font-weight: 400;
   text-decoration: none;
   font-size: 18px;
   line-height: 18px;
-
 }
 
-  .site-list {
-    padding: 0px;
-    margin: 0px;
-    display: flex;
+.site-list {
+  padding: 0px;
+  margin: 0px;
+  display: flex;
 }
 
-.footer__list{
+.footer__list {
   list-style: none;
 
 }
 
-.footer__item{
-   border: 3px solid #E5E5E5;
-   display: inline-block;
-   border-radius: 50%;
-
+.footer__item {
+  border: 3px solid #e5e5e5;
+  display: inline-block;
+  border-radius: 50%;
 }
