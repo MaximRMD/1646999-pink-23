@@ -1,6 +1,22 @@
 // Начните писать стили здесь
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 .container {
   width: 940px;
@@ -10,11 +26,13 @@
 }
 
 .page {
-  font-family: "Open sans";
+  font-family: "Open sans", "Arial", sans-serif;
   height: 100%;
 }
 
-.page-body {}
+.page__body {
+  margin: 0px;
+}
 
 .main-title {
   width: 300px;
@@ -22,15 +40,20 @@
   font-weight: 300;
   font-size: 50px;
   line-height: 68px;
-  color: var($variable-white);
+  color: gray;
+}
+
+.available-OS {
+  width: 205px;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 34px;
 }
 
 .main-block {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
-
-
 
 .download {
   font-weight: 700;
@@ -40,15 +63,25 @@
   color: #283645;
   border: solid 3px;
   border-radius: 29px;
-  padding-left: 32px;
-  padding-right: 32px;
   padding-bottom: 20px;
   padding-top: 20px;
-  display: inline-block;
+  transition: 0.25s;
+  display: block;
+  width: 300px;
+  text-align: center;
+}
+
+.download:hover {
+  background-color: #ffffff;
+  color: #d22856;
+}
+
+.download:active {
+  color: rgba(210, 40, 86, 0.3);
+  background-color: #ffffff;
 }
 
 .advantages__offer {
-  margin: 0px;
   width: 780px;
   text-align: center;
   font-weight: 300;
@@ -57,15 +90,17 @@
 }
 
 .advantages__title {
+  margin: 0px;
+  margin-bottom: 35px;
   width: 240px;
   text-align: center;
   font-size: 30px;
   line-height: 30px;
   font-weight: 700;
-
 }
 
 .advantages__subtitle {
+  margin: 0px;
   width: 252px;
   text-align: center;
   font-weight: 400;
@@ -74,14 +109,20 @@
 }
 
 .advantages__list {
+  margin: 0px;
   list-style: none;
   display: flex;
+  column-gap: 78px;
   padding: 0px;
-  margin: 0px;
 }
 
 .advantages__block {
+  border: 5px solid;
   margin-bottom: 174px;
+}
+
+.advantages-background {
+  background-image: url(/img/grey-background.svg);
 }
 
 .effect-block {
@@ -101,7 +142,6 @@
   font-size: 18px;
   line-height: 30px;
   margin-bottom: 47px;
-
 }
 
 .effect__link {
@@ -109,7 +149,6 @@
   font-size: 18px;
   line-height: 30px;
   color: #d22856;
-
 }
 
 .quotes {
@@ -140,11 +179,8 @@
   color: #283645;
 }
 
-.price__title {}
-
 .connection__blocks {
   display: flex;
-
   justify-content: space-between;
 }
 
@@ -177,13 +213,6 @@
   line-height: 18px;
 }
 
-.reviews__text {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
-  color: #283645;
-}
-
 .access {
 
   font-weight: 300;
@@ -191,12 +220,14 @@
   line-height: 24px;
 }
 
+.header-hat {
+  display: flex;
+}
 
-.header {
+.header-block {
   display: flex;
   background-color: rgba(0, 0, 0, 0.3);
   width: 100%;
-  height: 110px;
 }
 
 .site-list__item {
@@ -206,7 +237,6 @@
 .site__link {
   color: #ffffff;
   padding-left: 50px;
-  font-family: Open sans;
   font-weight: 400;
   text-decoration: none;
   font-size: 18px;
@@ -214,14 +244,11 @@
 }
 
 .site-list {
-  padding: 0px;
-  margin: 0px;
   display: flex;
 }
 
 .footer__list {
   list-style: none;
-
 }
 
 .footer__item {
