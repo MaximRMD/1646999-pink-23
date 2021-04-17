@@ -1,3 +1,5 @@
+@import "./variables.scss";
+
 // Начните писать стили здесь
 @font-face {
   font-family: "Open Sans";
@@ -13,16 +15,76 @@
   font-style: normal;
 }
 
+$black: #000000;
+$black-opacity: rgba(0, 0, 0, 0.3);
+$white: #ffffff;
+$light-black: #1d2631;
+$extra-light-black: #283645;
+$extra-light-black-opacity: rgba(40, 54, 69, 0.3);
+$extra-light-black-opacity-middle: rgba(40, 54, 69, 0.5);
+$grey: #f2f2f2;
+$light-grey: #e5e5e5;
+$pink: #d22856;
+$pink-opacity: rgba(210, 40, 86, 0.3);
+$green: #2aab6d;
+$green-dark: #1c9b5e;
+$white-opacity: rgba(255, 255, 255, 0.3);
+
+html {
+  box-sizing: border-box;
+}
+
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
 .container {
-  width: 940px;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  border: 4px solid black;
+
+  @include tablets {
+    width: 90%;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  @include desktop {
+    max-width: 660px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @include phones {
+    max-width: 320px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.header-content {
+  border: blue 4px solid;
+  background-image: url(/img/back-mobile.png);
+  background-repeat: no-repeat;
+}
+
+.background-os {
+  background-color: #1D2631;
+}
+
+.access {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
   margin: 0;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .page {
@@ -30,44 +92,30 @@ img {
   height: 100%;
 }
 
-.page__body {
-  margin: 0;
-}
-
 .main-title {
-  width: 300px;
+  margin: 0;
+  max-width: 280px;
   text-align: center;
   font-weight: 300;
-  font-size: 50px;
-  line-height: 68px;
-  color: gray;
-}
-
-.available-OS {
-  width: 205px;
-  display: flex;
-  justify-content: space-between;
-  column-gap: 34px;
-}
-
-.main-block {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  font-size: 24px;
+  line-height: 120%;
+  color: white;
 }
 
 .download {
+  margin-bottom: 38px;
   font-weight: 700;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 18px;
   text-decoration: none;
-  color: #283645;
+  color: white;
   border: solid 3px;
   border-radius: 29px;
   padding-bottom: 20px;
   padding-top: 20px;
   transition: 0.25s;
   display: block;
-  width: 300px;
+  max-width: 280px;
   text-align: center;
 }
 
@@ -81,63 +129,84 @@ img {
   background-color: #ffffff;
 }
 
+.available-OS {
+  max-width: 205px;
+  display: flex;
+  justify-content: space-around;
+  column-gap: 34px;
+  align-items: center;
+}
+
+
 .advantages__offer {
-  width: 780px;
+  max-width: 280px;
+  width: 100%;
   text-align: center;
   font-weight: 300;
-  font-size: 50px;
-  line-height: 68px;
-}
-
-.advantages__title {
-  margin: 0;
-  margin-bottom: 35px;
-  width: 240px;
-  text-align: center;
-  font-size: 30px;
-  line-height: 30px;
-  font-weight: 700;
-}
-
-.advantages__subtitle {
-  margin: 0;
-  width: 252px;
-  text-align: center;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 24px;
+  line-height: 120%;
 }
 
 .advantages__list {
   margin: 0;
   list-style: none;
-  display: flex;
-  column-gap: 78px;
   padding: 0;
+  text-align: center;
 }
 
-.advantages__block {
-  border: 5px solid;
-  margin-bottom: 174px;
+.reviews__autor-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
 }
 
-.advantages-background {
-  background-image: url("../img/grey-background.svg");
+.reviews__text {
+  max-width: 280px;
+  margin-bottom: 44px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
 }
 
 .effect-block {
-  margin-bottom: 192px;
+  text-align: center;
+}
+
+.advantages__block {
+  background-image: url(/img/grey_background.png);
+  background-repeat: no-repeat;
+}
+
+.advantages__title {
+  margin: 0;
+  margin-bottom: 24px;
+  max-width: 280px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.advantages__subtitle {
+  margin: 0;
+  max-width: 252px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
 }
 
 .effect__title {
-  width: 298px;
+  max-width: 298px;
   font-size: 30px;
   line-height: 30px;
   font-weight: 700;
 }
 
 .effect__subtitle {
-  width: 534px;
+  max-width: 534px;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
@@ -151,46 +220,34 @@ img {
   color: #d22856;
 }
 
-.quotes {
-  margin-left: 560px;
+.price__position {
+  list-style: none;
 }
 
-.reviews__text {
-  width: 688px;
-  margin-left: 256px;
-  margin-bottom: 50px;
-  text-align: center;
+.price__title {
+  color: #ffffff;
+  background-color: #283645;
+}
+
+.price__name {
   font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
-}
-
-.reviews__autor-name {
-  margin-left: 494px;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 30px;
-}
-
-.price__text {
-  font-weight: 400;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 30px;
   color: #283645;
 }
 
-.connection__blocks {
-  display: flex;
-  justify-content: space-between;
+.price__item {
+  border: 2px solid #e5e5e5;
+  border-radius: 1px 0 0 0;
 }
 
 .connection__title {
-  margin-left: 368px;
-  width: 492px;
+  max-width: 228px;
   font-weight: 300;
-  font-size: 50px;
-  line-height: 68px;
+  font-size: 24px;
+  line-height: 120%;
   color: #283645;
+  margin: 0;
 }
 
 .connection__subtitle {
@@ -207,6 +264,49 @@ img {
   line-height: 33px;
 }
 
+.footer__item {
+  border: 3px solid #e5e5e5;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.phone-smile-pink {
+  width: 157px;
+  height: 320px;
+}
+/*
+.page__body {
+  margin: 0;
+}
+
+.main-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+.advantages__block {
+  border: 5px solid;
+  margin-bottom: 174px;
+}
+
+.advantages-background {
+  background-image: url("../img/grey-background.svg");
+}
+
+.effect-block {
+  margin-bottom: 192px;
+}
+
+.quotes {
+  margin-left: 560px;
+}
+
+.connection__blocks {
+  display: flex;
+  justify-content: space-between;
+}
+
 .developed__title {
   font-weight: 400;
   font-size: 18px;
@@ -214,7 +314,6 @@ img {
 }
 
 .access {
-
   font-weight: 300;
   font-size: 18px;
   line-height: 24px;
@@ -227,7 +326,7 @@ img {
 .header-block {
   display: flex;
   background-color: rgba(0, 0, 0, 0.3);
-  width: 100%;
+  max-width: 100%;
 }
 
 .site-list__item {
@@ -250,9 +349,4 @@ img {
 .footer__list {
   list-style: none;
 }
-
-.footer__item {
-  border: 3px solid #e5e5e5;
-  display: inline-block;
-  border-radius: 50%;
-}
+*/
