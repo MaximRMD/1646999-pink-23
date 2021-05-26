@@ -20,7 +20,43 @@
   }
 }
 
-
-.nav-toggle_closed {
+.header__top_open .nav-toggle_open {
   display: none;
+}
+
+.nav-toggle_open {
+  @include desktop {
+    display: none;
+  }
+}
+.nav-toggle_closed {
+  display: block;
+}
+
+.header__top_close .nav-toggle_closed {
+  display: none;
+}
+
+.header__top_nojs {
+  @include not-desktop {
+    & .header__top-wrapper {
+      background-color: #283645;
+    }
+
+    & .site-list {
+      display: block;
+    }
+
+    & .main-nav__wrapper {
+      display: block;
+    }
+
+    & .nav-toggle_open {
+      display: none;
+    }
+
+    & .nav-toggle_closed {
+      display: none;
+    }
+  }
 }

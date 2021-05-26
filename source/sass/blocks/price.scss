@@ -25,6 +25,12 @@
   text-align: center;
   position: relative;
 
+  &:not(:first-child) .price__name {
+    @include tablets {
+      display: none;
+    }
+  }
+
   @include tablets {
     display: block;
   }
@@ -91,6 +97,10 @@
   align-items: center;
   padding-right: 40px;
   padding-left: 40px;
+
+  @include tablets {
+    justify-content: center;
+  }
 }
 
 .price__wrapper  {

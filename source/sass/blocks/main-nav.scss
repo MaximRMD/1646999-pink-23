@@ -8,4 +8,8 @@
 
 .main-nav__list {
   background-color: $extra-light-black;
+
+  @include desktop {
+    background-color: transparent;
+  }
 }

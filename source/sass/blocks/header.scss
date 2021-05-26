@@ -53,9 +53,7 @@
 }
 
 .header-home-page {
-  background-image: url("../img/back-mobile.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: top;
 
   @include tablets {
@@ -67,24 +65,57 @@
     margin-bottom: 100px;
   }
 
-  @media only screen and (min-width: $tablet-width) and (min-resolution: 2dppx) {
-    background-image: url("../img/back-mobile@x2.jpg");
+  @include retina {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
+
+  @include tablets {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+
+    @include retina {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
+  }
+
+  @include desktop {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+
+    @include retina {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
   }
 }
 
 .header__logo-wrapper {
   display: flex;
   justify-content: space-between;
+  padding-top: 21px;
+  padding-bottom: 21px;
+
+  @include desktop {
+    margin-right: auto;
+  }
+}
+
+.header__top {
+  @include desktop {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .header__top-wrapper {
   background-color: $extra-light-black;
-  padding-top: 21px;
-  padding-bottom: 21px;
 }
 
 .header__top_close .header__top-wrapper {
   background-color: rgba(0, 0, 0, 0.3);
+
+  @include desktop {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+  }
 }
 
 .header__top-wrapper_closed .main-nav {
@@ -92,5 +123,7 @@
 }
 
 .header__top_close .site-list {
-  display: none;
+  @include not-desktop {
+    display: none;
+  }
 }

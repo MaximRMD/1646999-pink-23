@@ -64,8 +64,9 @@ img {
 
   @include desktop {
     width: 100%;
-    padding-left: 130px;
-    padding-right: 130px;
+    max-width: 940px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -347,7 +348,7 @@ img {
 
   @include desktop {
     max-width: initial;
-    right: -65px;
+    right: 0;
     bottom: -132px;
   }
 }

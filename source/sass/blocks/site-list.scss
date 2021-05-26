@@ -2,6 +2,10 @@
   list-style: none;
   padding: 0;
   margin: 0;
+
+  @include desktop {
+    display: flex;
+  }
 }
 
 .site-list__item {
@@ -14,16 +18,37 @@
   padding-bottom: 13px;
   text-align: center;
   box-shadow: 0 -1px 0 $black, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+
+  &:last-child {
+    border-bottom: 1px solid $black;
+
+    @include desktop {
+      border-bottom: none;
+    }
+  }
+
+  @include desktop {
+    box-shadow: none;
+    margin-right: 78px;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
-.site-list__item:last-child {
-  border-bottom: 1px solid $black;
-}
 
 .site-list__link {
   color: inherit;
   text-decoration: none;
   transition: 0.25s;
+
+  @include desktop {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: none;
+  }
 }
 
 .site-list__link:hover {
