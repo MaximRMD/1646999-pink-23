@@ -14,6 +14,7 @@
 
 <body class="page-body">
   <header class="header">
+    <div class="header-content">
       <div class="header-block header-home-page">
         <div class="header__top header__top_close">
           <!--!-->
@@ -124,153 +125,298 @@
           </nav>
         </div>
         <div class="main-block">
-          <p class="main-block__form"> Конкурс на самое безбашенное путешествие с Пинк</p>
+          <p class="main-title">Фотографии
+            пользователей</p>
         </div>
       </div>
   </header>
-
-
-  <main class="page-main">
-    <div class="raffle-block">
-      <p class="raffle-text">Поделитесь своей историей и получите
-        шанс выиграть ценный приз — 1000
-        миль на вашу бонусную карту!</p>
-    </div>
-    <div class="form-wrapper">
-      <form class="write-form" method="POST">
-        <div class="write-paragraph">
-          <p class="item-paragraph">
-            <label class="input-title" for="name">Фамилия:</label>
-            <input class="write-input write-input-name" id="name" type="text" name="name"
-              placeholder="Укажите фамилию *">
-          </p>
-
-          <p class="item-paragraph">
-            <label class="input-title" for="name">Имя:</label>
-            <input class="write-input write-input-name" id="name" type="text" name="name"
-              placeholder="Введите ваше имя *">
-          </p>
-
-          <p class="item-paragraph">
-            <label class="input-title" for="name">Отчество:</label>
-            <input class="write-input write-input-name" id="name" type="text" name="name"
-              placeholder="Ну и отчество тоже">
-          </p>
-        </div>
-      </form>
-
-      <div class="progress-block container">
-        <fieldset class="progress filter">
-          <legend class="progress-title progress-title_fuul-width"> Ваши безбашенные достижения в путешествии</legend>
-          <ul class="progress-checkbox">
-            <li class="progress-checkbox-item">
-              <input class="progress-checkbox-input" type="checkbox" name="Селфи" id="filter-selfie" checked>
-              <label class="progress-point" for="filter-selfie"> <span class="progress-check-box"></span>
-                Сделал селфи с акулой</label>
-            </li>
-
-            <li class="progress-checkbox-item">
-              <input class="progress-checkbox-input" type="checkbox" name="обгорел на пляже" id="filter-beach" checked>
-              <label class="progress-point" for="filter-beach"> <span class="progress-check-box"></span>
-                Обгорел на пляже</label>
-            </li>
-
-            <li class="progress-checkbox-item">
-              <input class="progress-checkbox-input" type="checkbox" name="Видел Чака Норриса" id="filter-chack">
-              <label class="progress-point" for="filter-chack"> <span class="progress-check-box"></span>
-                Видел Чака Норриса</label>
-            </li>
-
-            <li class="progress-checkbox-item">
-              <input class="progress-checkbox-input" type="checkbox" name="Накупил сувениров" id="filter-souvenirs">
-              <label class="progress-point" for="filter-souvenirs"> <span class="progress-check-box"></span>
-                Накупил сувениров</label>
-            </li>
-
-            <li class="progress-checkbox-item">
-              <input class="progress-checkbox-input" type="checkbox" name="Удержал башню" id="filter-tower" checked>
-              <label class="progress-point" for="filter-tower"> <span class="progress-check-box"></span>
-                Удержал башню</label>
-            </li>
-
-            <li class="progress-checkbox-item">
-              <input class="progress-checkbox-input" type="checkbox" name="Разгромил отель" id="filter-hotel">
-              <label class="progress-point" for="filter-hotel"> <span class="progress-check-box"></span>
-                Разгромил отель</label>
-            </li>
-          </ul>
-        </fieldset>
+  <main class="page">
+    <div class="page__main-block">
+      <div class="page__main-paragraph">
+        <p class="page__paragraph-text">
+          Взгляните на фотографии, которые выкладывают пользователи!
+          Видите, как неа хвтает ваших?
+        </p>
       </div>
 
-      <div class="applications-block container">
-        <fieldset class="applications-os filter">
-          <legend class="applications-title">С каким приложением
-            путешествовали?</legend>
-
-          <ul class="radio">
-            <li class="radio-item">
-              <input class="radio-input" type="radio" name="grid" id="filter-ios" checked>
-
-              <label class="point" for="filter-ios">
-                <span class="custom-radio"></span>
-                Pink для iOS</label>
-            </li>
-
-            <li class="radio-item">
-              <input class="radio-input" type="radio" name="grid" id="filter-android">
-
-              <label class="point" for="filter-android">
-                <span class="custom-radio"></span>
-                Pink на Android</label>
-            </li>
-
-            <li class="radio-item">
-              <input class="radio-input" type="radio" name="grid" id="filter-windows">
-              <label class="point" for="filter-windows">
-                <span class="custom-radio"></span>
-                Windows Phone</label>
-            </li>
-          </ul>
-        </fieldset>
-      </div>
-
-      <div class="write-block container">
-        <form class="write-form" method="POST">
-          <fieldset class="write-item">
-            <legend class="applications-title applications-title_phones">Контактная информация</legend>
-            <p class="item-paragraph item-paragraph-form">
-              <label class="input-title" for="phone">Номер телефона</label><br>
-              <input class="write-input write-input-name" id="phone" type="text" name="phone"
-                placeholder="Номер, пожалуйста">
-            </p>
-            <p class="item-paragraph item-paragraph-form">
-              <label class="input-title" for="email">Адрес почты</label><br>
-              <input class="write-input write-input-email" id="email" type="email" name="email"
-                placeholder="Введите почту *">
-            </p>
-          </fieldset>
-        </form>
+      <div class="page__panorama">
+        <picture>
+          <source srcset="./img/panorama-desktop@1x.jpg 1x, ./img/panorama-desktop@2x.jpg 2x" type="image/jpg"
+            media="(min-width: 1200px)">
+          <source srcset="./img/panorama-tablet@x1.jpg 1x, ./img/panorama-tablet@2x.jpg 2x" type="image/jpg"
+            media="(min-width: 768px)">
+          <source srcset="./img/panorama-phone@1x.jpg 1x, ./img/panorama-phone@2x.jpg 2x" type="image/jpg"
+            media="(min-width: 320px)">
+          <img class="page__panorama-img img-width" src="./img/panorama-phone@1x.jpg" alt="Панорамное фото моста">
+        </picture>
 
       </div>
-    </div>
-
-
-    <div class="container">
-      <fieldset class="emotions">
-        <legend class="emotions__title applications-title ">Опишите свои эмоции</legend>
-        <label class="emotions__label" for="text"></label><br>
-        <textarea class="emotions-text" name="text" id="text" rows="5"
-          placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-      </fieldset>
-      <div class="emotions-block-tablet">
-        <button class="emotions-block-tablet__button-send button-green" type="submit">Отправить форму</button>
-        <div class="emotions-block-tablet__star-text-block">
-          <span class="emotions-star-text">*</span> — обязательные поля
+      <div class="container">
+        <div class="comment-background">
+          <div class="comment-background__name-block comment-background__name-block_full-width">
+            <p class="comment-background__name-paragrap"><span class="span-name">Анна</span>(5 минут назад)</p>
+            <p class="comment-background__name-text">Прыгать или нет? Напишите в
+              комментарии свой совет и
+              смотрите прямую трансляцию в
+              перископе, задавайте свои вопросы!</p>
+            <div class="comment-background__name-like">
+              <svg class="comment-background__name-heart" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M6.46867 12C6.3589 12.0014 6.25012 11.9798 6.14988 11.9367C6.04963 11.8935 5.96033 11.8298 5.88815 11.75C1.95926 7.42 1.03665 6.44 0.860416 6.17C0.307088 5.49497 0.00416162 4.66056 0 3.8C0.00441359 3.07425 0.223059 2.36473 0.63034 1.7545C1.03762 1.14428 1.61668 0.658598 2.29973 0.354328C2.98278 0.0500576 3.74155 -0.0602132 4.48721 0.036425C5.23287 0.133063 5.93456 0.432611 6.51014 0.9C7.22774 0.319491 8.13412 0.00090711 9.07066 0C10.1136 0.00264761 11.1129 0.404172 11.8494 1.11652C12.5859 1.82888 12.9995 2.79391 12.9995 3.8C13.014 4.67715 12.6845 5.5272 12.0769 6.18L7.03883 11.74C6.9678 11.8185 6.88016 11.8814 6.78182 11.9246C6.68348 11.9677 6.5767 11.99 6.46867 11.99V12ZM2.07329 5.28C2.29099 5.54 4.63381 8.12 6.46867 10.14L10.947 5.2C11.3073 4.81798 11.5005 4.3163 11.486 3.8C11.486 3.18205 11.2316 2.5894 10.7786 2.15244C10.3256 1.71548 9.71126 1.47 9.07066 1.47C8.69007 1.47297 8.31512 1.55909 7.97398 1.7219C7.63285 1.8847 7.33439 2.11996 7.10103 2.41C7.02566 2.49603 6.9321 2.56553 6.82661 2.61382C6.72113 2.66211 6.60615 2.68809 6.48941 2.69C6.37337 2.68847 6.25936 2.6605 6.15667 2.60836C6.05398 2.55622 5.96552 2.4814 5.89852 2.39C5.66784 2.10104 5.37087 1.86758 5.03093 1.70796C4.69099 1.54833 4.31732 1.46688 3.93926 1.47C3.48505 1.47534 3.04153 1.6036 2.65919 1.84016C2.27684 2.07673 1.97103 2.41211 1.77658 2.8081C1.58213 3.2041 1.50684 3.64481 1.5593 4.08006C1.61176 4.51531 1.78985 4.9276 2.07329 5.27V5.28Z"
+                  fill="#D22856" />
+              </svg>
+              <p class="comment-background__name-nice">Нравится:215</p>
+            </div>
+          </div>
         </div>
       </div>
 
-    </div>
 
+      <div class="comment container">
+        <div class="comment-background">
+          <div class="comment-background__name-image">
+            <picture>
+              <source srcset="./img/photo-levon-desktop@1x.jpg 1x, ./img/photo-levon-desktop@2x.jpg 2x" type="image/jpg"
+                media="(min-width: 1200px)">
+              <source srcset="./img/photo-levon-tablet@x1.jpg 1x, ./img/photo-levon-tablet@2x.jpg 2x" type="image/jpg"
+                media="(min-width: 768px)">
+              <source srcset="./img/photo-levon-mobile@1x.jpg 1x, ./img/photo-levon-mobile@2x.jpg 2x" type="image/jpg"
+                media="(min-width: 320px)">
+              <img class="comment__name img-width" src="./img/photo-levon-mobile@1x.jpg" alt="Фото с машиной">
+            </picture>
+          </div>
+          <div class="comment-background__name-block">
+            <p class="comment-background__name-paragraph"><span class="span-name">Левон</span>(5 часов назад)</p>
+            <p class="comment-background__name-text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <div class="comment-background__name-like">
+              <svg class="comment-background__name-heart" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M6.46867 12C6.3589 12.0014 6.25012 11.9798 6.14988 11.9367C6.04963 11.8935 5.96033 11.8298 5.88815 11.75C1.95926 7.42 1.03665 6.44 0.860416 6.17C0.307088 5.49497 0.00416162 4.66056 0 3.8C0.00441359 3.07425 0.223059 2.36473 0.63034 1.7545C1.03762 1.14428 1.61668 0.658598 2.29973 0.354328C2.98278 0.0500576 3.74155 -0.0602132 4.48721 0.036425C5.23287 0.133063 5.93456 0.432611 6.51014 0.9C7.22774 0.319491 8.13412 0.00090711 9.07066 0C10.1136 0.00264761 11.1129 0.404172 11.8494 1.11652C12.5859 1.82888 12.9995 2.79391 12.9995 3.8C13.014 4.67715 12.6845 5.5272 12.0769 6.18L7.03883 11.74C6.9678 11.8185 6.88016 11.8814 6.78182 11.9246C6.68348 11.9677 6.5767 11.99 6.46867 11.99V12ZM2.07329 5.28C2.29099 5.54 4.63381 8.12 6.46867 10.14L10.947 5.2C11.3073 4.81798 11.5005 4.3163 11.486 3.8C11.486 3.18205 11.2316 2.5894 10.7786 2.15244C10.3256 1.71548 9.71126 1.47 9.07066 1.47C8.69007 1.47297 8.31512 1.55909 7.97398 1.7219C7.63285 1.8847 7.33439 2.11996 7.10103 2.41C7.02566 2.49603 6.9321 2.56553 6.82661 2.61382C6.72113 2.66211 6.60615 2.68809 6.48941 2.69C6.37337 2.68847 6.25936 2.6605 6.15667 2.60836C6.05398 2.55622 5.96552 2.4814 5.89852 2.39C5.66784 2.10104 5.37087 1.86758 5.03093 1.70796C4.69099 1.54833 4.31732 1.46688 3.93926 1.47C3.48505 1.47534 3.04153 1.6036 2.65919 1.84016C2.27684 2.07673 1.97103 2.41211 1.77658 2.8081C1.58213 3.2041 1.50684 3.64481 1.5593 4.08006C1.61176 4.51531 1.78985 4.9276 2.07329 5.27V5.28Z"
+                  fill="#D22856" />
+              </svg>
+              <p class="comment-background__name-nice">Нравится:356</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="comment-background">
+          <div class="comment-background__name-image">
+            <picture>
+              <source srcset="./img/photo-anton-desktop@1x.jpg 1x, ./img/photo-anton-desktop@2x.jpg 2x" type="image/jpg"
+                media="(min-width: 1200px)">
+              <source srcset="./img/photo-anton-tablet@1x.png 1x, ./img/photo-anton-tablet@2x.png 2x" type="image/jpg"
+                media="(min-width: 768px)">
+              <source srcset="./img/photo-anton-mobile@1x.jpg 1x, ./img/photo-anton-mobile@2x.jpg 2x" type="image/jpg"
+                media="(min-width: 320px)">
+              <img class="img-width" src="./img/photo-anton-mobile@1x.jpg" alt="Фото с барабанами">
+            </picture>
+          </div>
+          <div class="comment-background__name-block">
+            <p class="comment-background__name-paragrap"><span class="span-name">Антон</span>(12 часов назад)</p>
+            <p class="comment-background__name-text">Соседи будут рады!</p>
+            <div class="comment-background__name-like">
+              <svg class="comment-background__name-heart" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M6.46867 12C6.3589 12.0014 6.25012 11.9798 6.14988 11.9367C6.04963 11.8935 5.96033 11.8298 5.88815 11.75C1.95926 7.42 1.03665 6.44 0.860416 6.17C0.307088 5.49497 0.00416162 4.66056 0 3.8C0.00441359 3.07425 0.223059 2.36473 0.63034 1.7545C1.03762 1.14428 1.61668 0.658598 2.29973 0.354328C2.98278 0.0500576 3.74155 -0.0602132 4.48721 0.036425C5.23287 0.133063 5.93456 0.432611 6.51014 0.9C7.22774 0.319491 8.13412 0.00090711 9.07066 0C10.1136 0.00264761 11.1129 0.404172 11.8494 1.11652C12.5859 1.82888 12.9995 2.79391 12.9995 3.8C13.014 4.67715 12.6845 5.5272 12.0769 6.18L7.03883 11.74C6.9678 11.8185 6.88016 11.8814 6.78182 11.9246C6.68348 11.9677 6.5767 11.99 6.46867 11.99V12ZM2.07329 5.28C2.29099 5.54 4.63381 8.12 6.46867 10.14L10.947 5.2C11.3073 4.81798 11.5005 4.3163 11.486 3.8C11.486 3.18205 11.2316 2.5894 10.7786 2.15244C10.3256 1.71548 9.71126 1.47 9.07066 1.47C8.69007 1.47297 8.31512 1.55909 7.97398 1.7219C7.63285 1.8847 7.33439 2.11996 7.10103 2.41C7.02566 2.49603 6.9321 2.56553 6.82661 2.61382C6.72113 2.66211 6.60615 2.68809 6.48941 2.69C6.37337 2.68847 6.25936 2.6605 6.15667 2.60836C6.05398 2.55622 5.96552 2.4814 5.89852 2.39C5.66784 2.10104 5.37087 1.86758 5.03093 1.70796C4.69099 1.54833 4.31732 1.46688 3.93926 1.47C3.48505 1.47534 3.04153 1.6036 2.65919 1.84016C2.27684 2.07673 1.97103 2.41211 1.77658 2.8081C1.58213 3.2041 1.50684 3.64481 1.5593 4.08006C1.61176 4.51531 1.78985 4.9276 2.07329 5.27V5.28Z"
+                  fill="#D22856" />
+              </svg>
+              <p class="comment-background__name-nice">Нравится:666</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="comment-background">
+          <div class="comment__name-image">
+            <picture>
+              <source srcset="./img/photo-boris-desktop@1x.jpg 1x, ./img/photo-boris-desktop@2x.jpg 2x" type="image/jpg"
+                media="(min-width: 1200px)">
+              <source srcset="./img/photo-boris-tablet@1x.jpg 1x, ./img/photo-boris-tablet@2x.jpg 2x" type="image/jpg"
+                media="(min-width: 768px)">
+              <source srcset="./img/photo-boris-mobail@1x.jpg 1x, ./img/photo-boris-mobail@2x.jpg 2x" type="image/jpg"
+                media="(min-width: 320px)">
+              <img class="img-width" src="./img/photo-boris-mobail@1x.jpg" alt="Фото стекляной крыши">
+            </picture>
+          </div>
+          <div class="comment-background__name-block">
+            <p class="comment-background__name-paragrap"><span class="span-name">Борис</span>(20 часов назад)</p>
+            <p class="comment-background__name-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <div class="comment-background__name-like">
+              <svg class="comment-background__name-heart" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M6.46867 12C6.3589 12.0014 6.25012 11.9798 6.14988 11.9367C6.04963 11.8935 5.96033 11.8298 5.88815 11.75C1.95926 7.42 1.03665 6.44 0.860416 6.17C0.307088 5.49497 0.00416162 4.66056 0 3.8C0.00441359 3.07425 0.223059 2.36473 0.63034 1.7545C1.03762 1.14428 1.61668 0.658598 2.29973 0.354328C2.98278 0.0500576 3.74155 -0.0602132 4.48721 0.036425C5.23287 0.133063 5.93456 0.432611 6.51014 0.9C7.22774 0.319491 8.13412 0.00090711 9.07066 0C10.1136 0.00264761 11.1129 0.404172 11.8494 1.11652C12.5859 1.82888 12.9995 2.79391 12.9995 3.8C13.014 4.67715 12.6845 5.5272 12.0769 6.18L7.03883 11.74C6.9678 11.8185 6.88016 11.8814 6.78182 11.9246C6.68348 11.9677 6.5767 11.99 6.46867 11.99V12ZM2.07329 5.28C2.29099 5.54 4.63381 8.12 6.46867 10.14L10.947 5.2C11.3073 4.81798 11.5005 4.3163 11.486 3.8C11.486 3.18205 11.2316 2.5894 10.7786 2.15244C10.3256 1.71548 9.71126 1.47 9.07066 1.47C8.69007 1.47297 8.31512 1.55909 7.97398 1.7219C7.63285 1.8847 7.33439 2.11996 7.10103 2.41C7.02566 2.49603 6.9321 2.56553 6.82661 2.61382C6.72113 2.66211 6.60615 2.68809 6.48941 2.69C6.37337 2.68847 6.25936 2.6605 6.15667 2.60836C6.05398 2.55622 5.96552 2.4814 5.89852 2.39C5.66784 2.10104 5.37087 1.86758 5.03093 1.70796C4.69099 1.54833 4.31732 1.46688 3.93926 1.47C3.48505 1.47534 3.04153 1.6036 2.65919 1.84016C2.27684 2.07673 1.97103 2.41211 1.77658 2.8081C1.58213 3.2041 1.50684 3.64481 1.5593 4.08006C1.61176 4.51531 1.78985 4.9276 2.07329 5.27V5.28Z"
+                  fill="#D22856" />
+              </svg>
+              <p class="comment-background__name-nice">Нравится:215</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="comment-background">
+          <div class="comment__name-image-kuban">
+            <picture>
+              <source srcset="./img/photo-kuban-desktop@1x.jpg 1x, ./img/photo-kuban-desktop@2x.jpg 2x" type="image/jpg"
+                media="(min-width: 1200px)">
+              <source srcset="./img/photo-kuban-tablet@1x.jpg 1x, ./img/photo-kuban-tablet@2x.jpg 2x" type="image/jpg"
+                media="(min-width: 768px)">
+              <source srcset="./img/photo-kuban-mobail@1x.jpg 1x, ./img/photo-kuban-mobail@2x.jpg 2x" type="image/jpg"
+                media="(min-width: 320px)">
+              <img class="img-width" src="./img/photo-kuban-mobail@1x.jpg" alt="Фото бахчи">
+            </picture>
+          </div>
+          <div class="comment-background__name-block">
+            <p class="comment-background__name-paragrap"><span class="span-name">Сергей</span>(25 часов назад)</p>
+            <p class="comment-background__name-text">Самая кубанская в мире!</p>
+            <div class="comment-background__name-like">
+              <svg class="comment-background__name-heart" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M6.46867 12C6.3589 12.0014 6.25012 11.9798 6.14988 11.9367C6.04963 11.8935 5.96033 11.8298 5.88815 11.75C1.95926 7.42 1.03665 6.44 0.860416 6.17C0.307088 5.49497 0.00416162 4.66056 0 3.8C0.00441359 3.07425 0.223059 2.36473 0.63034 1.7545C1.03762 1.14428 1.61668 0.658598 2.29973 0.354328C2.98278 0.0500576 3.74155 -0.0602132 4.48721 0.036425C5.23287 0.133063 5.93456 0.432611 6.51014 0.9C7.22774 0.319491 8.13412 0.00090711 9.07066 0C10.1136 0.00264761 11.1129 0.404172 11.8494 1.11652C12.5859 1.82888 12.9995 2.79391 12.9995 3.8C13.014 4.67715 12.6845 5.5272 12.0769 6.18L7.03883 11.74C6.9678 11.8185 6.88016 11.8814 6.78182 11.9246C6.68348 11.9677 6.5767 11.99 6.46867 11.99V12ZM2.07329 5.28C2.29099 5.54 4.63381 8.12 6.46867 10.14L10.947 5.2C11.3073 4.81798 11.5005 4.3163 11.486 3.8C11.486 3.18205 11.2316 2.5894 10.7786 2.15244C10.3256 1.71548 9.71126 1.47 9.07066 1.47C8.69007 1.47297 8.31512 1.55909 7.97398 1.7219C7.63285 1.8847 7.33439 2.11996 7.10103 2.41C7.02566 2.49603 6.9321 2.56553 6.82661 2.61382C6.72113 2.66211 6.60615 2.68809 6.48941 2.69C6.37337 2.68847 6.25936 2.6605 6.15667 2.60836C6.05398 2.55622 5.96552 2.4814 5.89852 2.39C5.66784 2.10104 5.37087 1.86758 5.03093 1.70796C4.69099 1.54833 4.31732 1.46688 3.93926 1.47C3.48505 1.47534 3.04153 1.6036 2.65919 1.84016C2.27684 2.07673 1.97103 2.41211 1.77658 2.8081C1.58213 3.2041 1.50684 3.64481 1.5593 4.08006C1.61176 4.51531 1.78985 4.9276 2.07329 5.27V5.28Z"
+                  fill="#D22856" />
+              </svg>
+              <p class="comment-background__name-nice">Нравится:4</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="comment-background">
+          <div class="comment__name-image-maxim">
+            <picture>
+              <source srcset="./img/photo-maxim-desktop@1x.jpg 1x, ./img/photo-maxim-desktop@2x.jpg 2x" type="image/jpg"
+                media="(min-width: 1200px)">
+              <source srcset="./img/photo-maxim-tablet@1x.jpg 1x, ./img/photo-maxim-tablet@2x.jpg 2x" type="image/jpg"
+                media="(min-width: 768px)">
+              <source srcset="./img/photo-maxim-mobile@1x.jpg 1x, ./img/photo-maxim-mobile@2x.jpg 2x" type="image/jpg"
+                media="(min-width: 320px)">
+              <img class="img-width" src="./img/photo-maxim-mobile@1x.jpg" alt="">
+            </picture>
+          </div>
+          <div class="comment-background__name-block">
+            <p class="comment-background__name-paragrap"><span class="span-name">Максим</span>(40 часов назад)</p>
+            <p class="comment-background__name-text">Где снег-то?</p>
+            <div class="comment-background__name-like">
+              <svg class="comment-background__name-heart" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M6.46867 12C6.3589 12.0014 6.25012 11.9798 6.14988 11.9367C6.04963 11.8935 5.96033 11.8298 5.88815 11.75C1.95926 7.42 1.03665 6.44 0.860416 6.17C0.307088 5.49497 0.00416162 4.66056 0 3.8C0.00441359 3.07425 0.223059 2.36473 0.63034 1.7545C1.03762 1.14428 1.61668 0.658598 2.29973 0.354328C2.98278 0.0500576 3.74155 -0.0602132 4.48721 0.036425C5.23287 0.133063 5.93456 0.432611 6.51014 0.9C7.22774 0.319491 8.13412 0.00090711 9.07066 0C10.1136 0.00264761 11.1129 0.404172 11.8494 1.11652C12.5859 1.82888 12.9995 2.79391 12.9995 3.8C13.014 4.67715 12.6845 5.5272 12.0769 6.18L7.03883 11.74C6.9678 11.8185 6.88016 11.8814 6.78182 11.9246C6.68348 11.9677 6.5767 11.99 6.46867 11.99V12ZM2.07329 5.28C2.29099 5.54 4.63381 8.12 6.46867 10.14L10.947 5.2C11.3073 4.81798 11.5005 4.3163 11.486 3.8C11.486 3.18205 11.2316 2.5894 10.7786 2.15244C10.3256 1.71548 9.71126 1.47 9.07066 1.47C8.69007 1.47297 8.31512 1.55909 7.97398 1.7219C7.63285 1.8847 7.33439 2.11996 7.10103 2.41C7.02566 2.49603 6.9321 2.56553 6.82661 2.61382C6.72113 2.66211 6.60615 2.68809 6.48941 2.69C6.37337 2.68847 6.25936 2.6605 6.15667 2.60836C6.05398 2.55622 5.96552 2.4814 5.89852 2.39C5.66784 2.10104 5.37087 1.86758 5.03093 1.70796C4.69099 1.54833 4.31732 1.46688 3.93926 1.47C3.48505 1.47534 3.04153 1.6036 2.65919 1.84016C2.27684 2.07673 1.97103 2.41211 1.77658 2.8081C1.58213 3.2041 1.50684 3.64481 1.5593 4.08006C1.61176 4.51531 1.78985 4.9276 2.07329 5.27V5.28Z"
+                  fill="#D22856" />
+              </svg>
+              <p class="comment-background__name-nice">Нравится:150</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="comment-background">
+          <div class="comment__name-image-nadejda">
+            <picture>
+              <source srcset="./img/photo-nadejda-desktop@1x.jpg 1x, ./img/photo-nadejda-desktop@2x.jpg 2x"
+                type="image/jpg" media="(min-width: 1200px)">
+              <source srcset="./img/photo-nadejda-tablet@1x.jpg 1x, ./img/photo-nadejda-tablet@2x.jpg 2x"
+                type="image/jpg" media="(min-width: 768px)">
+              <source srcset="./img/photo-nadejda-mobile@1x.jpg 1x, ./img/photo-nadejda-mobile@2x.jpg 2x"
+                type="image/jpg" media="(min-width: 320px)">
+              <img class="img-width" src="./img/photo-nadejda-mobile@1x.jpg" alt="">
+            </picture>
+          </div>
+          <div class="comment-background__name-block">
+            <p class="comment-background__name-paragrap"><span class="span-name">Надежда</span>(45 часов назад)</p>
+            <p class="comment-background__name-text">Всем GM и взаимные лайки!</p>
+            <div class="comment-background__name-like">
+              <svg class="comment-background__name-heart" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M6.46867 12C6.3589 12.0014 6.25012 11.9798 6.14988 11.9367C6.04963 11.8935 5.96033 11.8298 5.88815 11.75C1.95926 7.42 1.03665 6.44 0.860416 6.17C0.307088 5.49497 0.00416162 4.66056 0 3.8C0.00441359 3.07425 0.223059 2.36473 0.63034 1.7545C1.03762 1.14428 1.61668 0.658598 2.29973 0.354328C2.98278 0.0500576 3.74155 -0.0602132 4.48721 0.036425C5.23287 0.133063 5.93456 0.432611 6.51014 0.9C7.22774 0.319491 8.13412 0.00090711 9.07066 0C10.1136 0.00264761 11.1129 0.404172 11.8494 1.11652C12.5859 1.82888 12.9995 2.79391 12.9995 3.8C13.014 4.67715 12.6845 5.5272 12.0769 6.18L7.03883 11.74C6.9678 11.8185 6.88016 11.8814 6.78182 11.9246C6.68348 11.9677 6.5767 11.99 6.46867 11.99V12ZM2.07329 5.28C2.29099 5.54 4.63381 8.12 6.46867 10.14L10.947 5.2C11.3073 4.81798 11.5005 4.3163 11.486 3.8C11.486 3.18205 11.2316 2.5894 10.7786 2.15244C10.3256 1.71548 9.71126 1.47 9.07066 1.47C8.69007 1.47297 8.31512 1.55909 7.97398 1.7219C7.63285 1.8847 7.33439 2.11996 7.10103 2.41C7.02566 2.49603 6.9321 2.56553 6.82661 2.61382C6.72113 2.66211 6.60615 2.68809 6.48941 2.69C6.37337 2.68847 6.25936 2.6605 6.15667 2.60836C6.05398 2.55622 5.96552 2.4814 5.89852 2.39C5.66784 2.10104 5.37087 1.86758 5.03093 1.70796C4.69099 1.54833 4.31732 1.46688 3.93926 1.47C3.48505 1.47534 3.04153 1.6036 2.65919 1.84016C2.27684 2.07673 1.97103 2.41211 1.77658 2.8081C1.58213 3.2041 1.50684 3.64481 1.5593 4.08006C1.61176 4.51531 1.78985 4.9276 2.07329 5.27V5.28Z"
+                  fill="#D22856" />
+              </svg>
+              <p class="comment-background__name-nice">Нравится:2560</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="paragraph-block">
+        <p class="paragraph-block__text">Затмите их всех!&nbsp;
+          Выкладывайте все, что накопилось в телефоне!</p>
+      </div>
+      <div class="background container">
+        <div class="background__editor-img">
+          <picture>
+            <source srcset="./img/photo-editor-desktop@1x.jpg 1x, ./img/photo-editor-desktop@2x.jpg 2x" type="image/jpg"
+              media="(min-width: 1200px)">
+            <source srcset="./img/photo-editor-tablet@1x.jpg 1x, ./img/photo-editor-tablet@2x.jpg 2x" type="image/jpg"
+              media="(min-width: 768px)">
+            <source srcset="./img/photo-editor-mobile@1x.jpg 1x, ./img/photo-editor-mobile@2x.jpg 2x" type="image/jpg"
+              media="(min-width: 320px)">
+            <img class="img-width" src="./img/photo-editor-mobile@1x.jpg" alt="Зимний пейзаж">
+          </picture>
+        </div>
+        <div class="background-effects">
+          <div class="background-effects__editor-icon">
+            <svg class="background-effects__editor-svg background-effects__editor-svg--active" width="44" height="44"
+              viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M32 28H36V12C36 10.9391 35.5786 9.92172 34.8284 9.17157C34.0783 8.42143 33.0609 8 32 8H16V12H32V28ZM12 32V0H8V8H0V12H8V32C8 33.0609 8.42143 34.0783 9.17157 34.8284C9.92172 35.5786 10.9391 36 12 36H32V44H36V36H44V32H12Z" />
+            </svg>
+
+            <svg class="background-effects__editor-svg" width="48" height="43" viewBox="0 0 48 43"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M33.12 17.88L15.24 0L12.41 2.83L17.17 7.59L6.88 17.88C6.3182 18.4425 6.00264 19.205 6.00264 20C6.00264 20.795 6.3182 21.5575 6.88 22.12L17.88 33.12C18.4425 33.6818 19.205 33.9974 20 33.9974C20.795 33.9974 21.5575 33.6818 22.12 33.12L33.12 22.12C33.6818 21.5575 33.9974 20.795 33.9974 20C33.9974 19.205 33.6818 18.4425 33.12 17.88ZM10.41 20L20 10.42L29.59 20H10.41ZM38 23C38 23 34 27.33 34 30C34 31.0609 34.4214 32.0783 35.1716 32.8284C35.9217 33.5786 36.9391 34 38 34C39.0609 34 40.0783 33.5786 40.8284 32.8284C41.5786 32.0783 42 31.0609 42 30C42 27.33 38 23 38 23Z" />
+              <path d="M48 40H0V43H48V40Z" />
+            </svg>
+
+            <svg class="background-effects__editor-svg" width="32" height="32" viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16 4C18.3734 4 20.6935 4.70379 22.6669 6.02236C24.6402 7.34094 26.1783 9.21509 27.0866 11.4078C27.9948 13.6005 28.2325 16.0133 27.7694 18.3411C27.3064 20.6689 26.1635 22.8071 24.4853 24.4853C22.8071 26.1635 20.6689 27.3064 18.3411 27.7694C16.0133 28.2324 13.6005 27.9948 11.4078 27.0866C9.21509 26.1783 7.34095 24.6402 6.02237 22.6668C4.70379 20.6935 4.00001 18.3734 4.00001 16C4.00001 12.8174 5.26429 9.76515 7.51473 7.51472C9.76516 5.26428 12.8174 4 16 4ZM16 0C12.8355 0 9.74207 0.938384 7.11088 2.69649C4.4797 4.45459 2.42894 6.95345 1.21793 9.87706C0.0069325 12.8007 -0.309921 16.0177 0.307443 19.1214C0.924806 22.2251 2.44866 25.0761 4.6863 27.3137C6.92394 29.5513 9.77487 31.0752 12.8786 31.6926C15.9823 32.3099 19.1993 31.9931 22.1229 30.7821C25.0466 29.5711 27.5454 27.5203 29.3035 24.8891C31.0616 22.2579 32 19.1645 32 16C32 11.7565 30.3143 7.68687 27.3137 4.68629C24.3131 1.68571 20.2435 0 16 0Z" />
+              <path
+                d="M16 24.29C18.1536 24.1422 20.1708 23.1824 21.644 21.6046C23.1172 20.0268 23.9366 17.9486 23.9366 15.79C23.9366 13.6314 23.1172 11.5532 21.644 9.97538C20.1708 8.39759 18.1536 7.43782 16 7.29" />
+            </svg>
+          </div>
+          <input class="background__editor-range phone-range" type="range">
+        </div>
+
+        <div class="background-editor">
+          <div class="background-editor__tablet-icon">
+            <ul class="background-editor__tablet-list">
+              <li class="background-editor__tablet-item">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M16 14H18V6C18 5.46957 17.7893 4.96086 17.4142 4.58579C17.0391 4.21071 16.5304 4 16 4H8V6H16V14ZM6 16V0H4V4H0V6H4V16C4 16.5304 4.21071 17.0391 4.58579 17.4142C4.96086 17.7893 5.46957 18 6 18H16V22H18V18H22V16H6Z"
+                    fill="#D22856" />
+                </svg><input class="background__editor-range" type="range">
+              </li>
+              <li class="background-editor__tablet-item">
+                <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M16.56 9.14791L7.62 0L6.205 1.44791L8.585 3.88326L3.44 9.14791C3.1591 9.4357 3.00132 9.82581 3.00132 10.2326C3.00132 10.6393 3.1591 11.0294 3.44 11.3172L8.94 16.9451C9.22125 17.2325 9.6025 17.394 10 17.394C10.3975 17.394 10.7787 17.2325 11.06 16.9451L16.56 11.3172C16.8409 11.0294 16.9987 10.6393 16.9987 10.2326C16.9987 9.82581 16.8409 9.4357 16.56 9.14791ZM5.205 10.2326L10 5.33116L14.795 10.2326H5.205ZM19 11.7674C19 11.7674 17 13.9828 17 15.3488C17 15.8916 17.2107 16.4121 17.5858 16.7959C17.9609 17.1797 18.4696 17.3953 19 17.3953C19.5304 17.3953 20.0391 17.1797 20.4142 16.7959C20.7893 16.4121 21 15.8916 21 15.3488C21 13.9828 19 11.7674 19 11.7674Z"
+                    fill="#D22856" />
+                  <path d="M24 20.4651H0V22H24V20.4651Z" fill="#D22856" />
+                </svg><input class="background__editor-range" type="range">
+              </li>
+              <li class="background-editor__tablet-item">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8 2C9.18669 2 10.3467 2.35189 11.3334 3.01118C12.3201 3.67047 13.0892 4.60754 13.5433 5.7039C13.9974 6.80025 14.1162 8.00665 13.8847 9.17054C13.6532 10.3344 13.0818 11.4035 12.2426 12.2426C11.4035 13.0818 10.3344 13.6532 9.17054 13.8847C8.00666 14.1162 6.80026 13.9974 5.7039 13.5433C4.60755 13.0891 3.67047 12.3201 3.01119 11.3334C2.3519 10.3467 2 9.18669 2 8C2 6.4087 2.63214 4.88258 3.75736 3.75736C4.88258 2.63214 6.4087 2 8 2ZM8 0C6.41775 0 4.87103 0.469192 3.55544 1.34824C2.23985 2.22729 1.21447 3.47672 0.608967 4.93853C0.00346625 6.40034 -0.15496 8.00887 0.153721 9.56072C0.462403 11.1126 1.22433 12.538 2.34315 13.6569C3.46197 14.7757 4.88743 15.5376 6.43928 15.8463C7.99113 16.155 9.59966 15.9965 11.0615 15.391C12.5233 14.7855 13.7727 13.7602 14.6518 12.4446C15.5308 11.129 16 9.58225 16 8C16 5.87827 15.1571 3.84344 13.6569 2.34315C12.1566 0.842855 10.1217 0 8 0Z"
+                    fill="#D22856" />
+                  <path
+                    d="M8 12.145C9.07679 12.0711 10.0854 11.5912 10.822 10.8023C11.5586 10.0134 11.9683 8.97432 11.9683 7.895C11.9683 6.81567 11.5586 5.77659 10.822 4.98769C10.0854 4.1988 9.07679 3.71891 8 3.645"
+                    fill="#D22856" />
+                </svg><input class="background__editor-range" type="range">
+              </li>
+            </ul>
+          </div>
+          <div class="background-editor-button">
+            <button type="submit" class="button-post">Запостить</button>
+            <button type="submit" class="button-post disabled">Отмена</button>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
   </main>
   <footer class="footer">
     <div class="container">
@@ -316,29 +462,6 @@
       </div>
     </div>
   </footer>
-
-  <div class="modal">
-    <div class="modal__tablet-block">
-      <p class="modal__tablet-title">Что-то пошло
-        не так!</p>
-      <p class="modal__tablet-subtitle">Проверьте поля, выделенные
-        красным, скорее всего вы забыли
-        их заполнить</p>
-      <button class="modal__tablet-button button-green" type="submit">Ok</button>
-    </div>
-  </div>
-
-  <div class="modal">
-    <div class="modal__tablet-block">
-      <p class="modal__tablet-title">Ваша заявка
-        отправлена!</p>
-      <p class="modal__tablet-subtitle subtitle-width">Спасибо за ваше участие, ваша
-        заявка уже поступила к нам. В
-        ближайшее время мы рассмотрим
-        ее и оповестим вас.</p>
-      <button class="modal__tablet-button button-green button-green-close" type="submit">Закрыть окно</button>
-    </div>
-  </div>
 </body>
 
 </html>

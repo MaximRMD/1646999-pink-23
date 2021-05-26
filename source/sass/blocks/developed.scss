@@ -1,0 +1,21 @@
+.developed__title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+  color: $extra-light-black;
+  margin: 0;
+  margin-bottom: 51px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.developed__title-html {
+  margin-left: 15px;
+  fill: $pink;
+  transition: 0.25s;
+
+  &:hover {
+    fill: $extra-light-black;
+  }
+}

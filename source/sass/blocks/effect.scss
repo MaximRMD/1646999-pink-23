@@ -1,0 +1,42 @@
+.effect {
+  @include tablets {
+    order: -1;
+    margin-bottom: 109px;
+  }
+}
+
+.effect__link {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: $pink;
+}
+
+
+.effect__title {
+  max-width: 298px;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.effect__subtitle {
+  max-width: 534px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 47px;
+
+  @include tablets {
+    max-width: 310px;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 24px;
+  }
+
+  @include desktop {
+    max-width: 534px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

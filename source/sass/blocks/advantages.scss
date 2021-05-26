@@ -1,0 +1,91 @@
+.advantages__offer {
+  text-align: center;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  margin: 0;
+  margin-bottom: 46px;
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include tablets {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 588px;
+    font-size: 40px;
+    line-height: 54px;
+    text-align: center;
+  }
+
+  @include desktop {
+    max-width: 780px;
+    font-size: 50px;
+    line-height: 68px;
+  }
+}
+
+.advantages__offer-tablets {
+  @include tablets {
+    max-width: 344px;
+  }
+
+  @include desktop {
+    max-width: 410px;
+  }
+}
+
+.advantages-top {
+  min-width: 280px;
+  align-items: center;
+
+  @include tablets {
+    margin-bottom: 47px;
+  }
+
+  @include desktop {
+    margin-bottom: 72px;
+  }
+}
+
+.advantages__list {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+
+  @include tablets {
+    position: relative;
+    bottom: 35px;
+  }
+
+  @include desktop {
+    display: flex;
+    margin-bottom: 59px;
+  }
+}
+
+.advantages__illustration {
+
+  @include phones {
+    display: none;
+  }
+
+  @include tablets {
+    display: none;
+  }
+
+  @include desktop {
+    display: block;
+    margin-bottom: 59px;
+  }
+}
+
+.phone__smile-pink__img {
+  @include tablets {
+    max-width: initial;
+    position: relative;
+    bottom: 198px;
+    right: 112px;
+  }
+}

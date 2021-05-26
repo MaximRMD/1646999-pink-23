@@ -1,0 +1,29 @@
+.main-block {
+  border-bottom: 1px solid transparent;
+}
+
+.main-block__form {
+  max-width: 228px;
+  padding-top: 36px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 51px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 33px;
+  color: $white;
+  font-weight: 300;
+
+  @include tablets {
+    max-width: 620px;
+    font-size: 50px;
+    line-height: 68px;
+  }
+
+  @include desktop {
+    max-width: 747px;
+    padding-top: 74px;
+    margin-bottom: 104px;
+  }
+}

@@ -1,0 +1,29 @@
+
+.paragraph-block__text {
+  max-width: 280px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  color: $extra-light-black;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include tablets {
+    max-width: 422px;
+    font-size: 18px;
+  }
+}
+
+.paragraph-block {
+  margin-bottom: 52px;
+
+  @include tablets {
+    margin-bottom: 71px;
+  }
+
+  @include desktop {
+    margin-bottom: 75px;
+  }
+}
