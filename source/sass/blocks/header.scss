@@ -1,10 +1,10 @@
-.header__pink-logo_visible-phone {
+.header__pink-logo--visible-phone {
   @include tablets {
     display: none;
   }
 }
 
-.header__pink-logo_visible-tablet {
+.header__pink-logo--visible-tablet {
 
   display: none;
 
@@ -18,7 +18,7 @@
   }
 }
 
-.header__pink-logo_visible-desktop {
+.header__pink-logo--visible-desktop {
 
   display: none;
 
@@ -52,7 +52,7 @@
   background-size: cover;
 }
 
-.header-home-page {
+.header__home-page {
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: top;
 
@@ -108,7 +108,7 @@
   background-color: $extra-light-black;
 }
 
-.header__top_close .header__top-wrapper {
+.header__top-close .header__top-wrapper {
   background-color: rgba(0, 0, 0, 0.3);
 
   @include desktop {
@@ -118,12 +118,44 @@
   }
 }
 
-.header__top-wrapper_closed .main-nav {
+.header__top-wrapper--closed .main-nav {
   display: none;
 }
 
-.header__top_close .site-list {
+.header__top-close .site-list {
   @include not-desktop {
     display: none;
   }
+}
+
+.header__top_nojs {
+  @include not-desktop {
+    & .header__top-wrapper {
+      background-color: #283645;
+    }
+
+    & .site-list {
+      display: block;
+    }
+
+    & .main-nav__wrapper {
+      display: block;
+    }
+
+    & .nav-toggle_open {
+      display: none;
+    }
+
+    & .nav-toggle_closed {
+      display: none;
+    }
+  }
+}
+
+.header__top_close .nav-toggle_closed {
+  display: none;
+}
+
+.header__top_open .nav-toggle_open {
+  display: none;
 }

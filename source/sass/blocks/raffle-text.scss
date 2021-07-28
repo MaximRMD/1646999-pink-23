@@ -1,0 +1,24 @@
+.raffle-text {
+  max-width: 280px;
+  padding-top: 54px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  margin: 0;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 52px;
+
+  @include tablets {
+    max-width: 490px;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 82px;
+  }
+
+  @include desktop {
+    max-width: 756px;
+  }
+}

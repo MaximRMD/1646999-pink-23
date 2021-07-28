@@ -1,4 +1,4 @@
-.progress-checkbox {
+.rogress__checkbox {
   display: flex;
   flex-wrap: nowrap;
   list-style: none;
@@ -14,12 +14,10 @@
     margin-bottom: 0;
     padding: 0;
     flex-direction: row;
-
   }
-
 }
 
-.progress-block {
+.progress {
   background-color: $grey;
   margin-bottom: 42px;
 
@@ -40,7 +38,7 @@
   }
 }
 
-.progress-title {
+.progress__title {
   text-transform: uppercase;
   max-width: 222px;
   color: $pink;
@@ -59,7 +57,7 @@
   }
 }
 
-.progress-title_fuul-width {
+.progress__title-fuul--width {
   @include tablets {
     max-width: 574px;
     padding-right: 25px;
@@ -67,7 +65,7 @@
   }
 }
 
-.progress-point {
+.progress__point {
   font-size: 18px;
   line-height: 30px;
   color: $extra-light-black;
@@ -80,17 +78,17 @@
   min-width: 284px;
 }
 
-.progress-checkbox-item {
+.progress__checkbox-item {
   margin-bottom: 47px;
   margin-left: 62px;
 }
 
-.progress-checkbox-input:checked+label .progress-check-box {
+.progress__checkbox-input:checked+label .progress__check-box {
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
 }
 
-.progress-check-box {
+.progress__check-box {
   width: 39px;
   height: 39px;
   cursor: pointer;
@@ -111,7 +109,7 @@
 }
 
 
-.progress-checkbox-input {
+.progress__checkbox-input {
   padding-left: 2.2em;
   -webkit-appearance: none;
   -moz-appearance: none;

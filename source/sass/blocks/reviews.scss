@@ -104,3 +104,22 @@
     margin-bottom: 58px;
   }
 }
+
+
+.reviews__autor-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 31px;
+
+  @include tablets {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  @include desktop {
+    font-size: 24px;
+  }
+}

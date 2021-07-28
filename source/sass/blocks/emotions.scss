@@ -17,18 +17,18 @@
   }
 }
 
-.emotions-star-text {
+.emotions__star--text {
   color: $pink;
 }
 
-.emotions-block-tablet__star-text-block {
+.emotions__block-tablet--star-text {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-bottom: 26px;
 }
 
-.emotions-block-tablet {
+.emotions__block--tablet {
   @include tablets {
     display: flex;
     align-items: flex-end;
@@ -36,7 +36,7 @@
   }
 }
 
-.emotions-paragraph {
+/*.emotions-paragraph {
   text-transform: uppercase;
   color: $pink;
   font-weight: 400;
@@ -46,8 +46,8 @@
   display: inline-block;
   margin: 0;
 }
-
-.emotions-text {
+*/
+.emotions__text {
   width: 276px;
   border: $light-grey solid 2px;
   font-weight: 400;
@@ -66,7 +66,7 @@
   }
 }
 
-.emotions-block-tablet__button-send {
+.emotions__block-tablet--button-send {
   padding-left: 45px;
   padding-right: 45px;
   margin-bottom: 46px;
