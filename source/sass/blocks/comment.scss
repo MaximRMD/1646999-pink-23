@@ -1,20 +1,3 @@
-
-.comment {
-  @include tablets {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    margin-bottom: 73px;
-  }
-
-  @include desktop {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-bottom: 67px;
-  }
-}
-
-
 .comment-background {
   background-color: $grey;
   margin-bottom: 20px;
@@ -69,7 +52,7 @@
   }
 }
 
-.comment-background__name-block_full-width {
+.comment-background__name-block--full-width {
   max-width: initial;
 }
 
@@ -90,7 +73,7 @@
   margin-top: auto;
 }
 
-.span-name {
+.comment-background__span-name {
   font-size: 14px;
   line-height: 24px;
   font-weight: 700;
@@ -99,76 +82,6 @@
 }
 
 .comment-background__name-image {
-  width: 100%;
-  min-height: 180px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 26px;
-
-  @include tablets {
-    width: 100%;
-    min-height: 300px;
-    margin-bottom: 0;
-  }
-}
-
-.comment__name-image-anton {
-  width: 100%;
-  min-height: 180px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 26px;
-
-  @include tablets {
-    width: 100%;
-    min-height: 300px;
-    margin-bottom: 0;
-  }
-}
-
-.comment__name-image-boris {
-  width: 100%;
-  min-height: 180px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 26px;
-
-  @include tablets {
-    width: 100%;
-    min-height: 300px;
-    margin-bottom: 0;
-  }
-}
-
-.comment__name-image-kuban {
-  width: 100%;
-  min-height: 180px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 26px;
-
-  @include tablets {
-    width: 100%;
-    min-height: 300px;
-    margin-bottom: 0;
-  }
-}
-
-.comment__name-image-maxim {
-  width: 100%;
-  min-height: 180px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 26px;
-
-  @include tablets {
-    width: 100%;
-    min-height: 300px;
-    margin-bottom: 0;
-  }
-}
-
-.comment__name-image-nadejda {
   width: 100%;
   min-height: 180px;
   background-repeat: no-repeat;

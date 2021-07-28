@@ -51,7 +51,6 @@
 
   @include desktop {
     max-width: 572px;
-
   }
 }
 
@@ -64,5 +63,21 @@
 
   @include desktop {
     margin-bottom: 97px;
+  }
+}
+
+
+.page__comment {
+  @include tablets {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 73px;
+  }
+
+  @include desktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 67px;
   }
 }

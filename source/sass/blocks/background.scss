@@ -26,7 +26,7 @@
   }
 }
 
-.background-effects__editor-icon {
+.background__effects--editor-icon {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -38,7 +38,7 @@
   }
 }
 
-.background-editor__tablet-item {
+.background__editor--tablet-item {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -47,15 +47,7 @@
   padding-top: 34px;
 }
 
-.background__editor-tablet-item:nth-last-of-type(1) {
-  margin-bottom: 61px;
-}
-
-.background__editor-tablet-item:nth-of-type(1) {
-  padding-top: 0;
-}
-
-.background-effects__editor-svg {
+.background__effects--editor-svg {
   fill: $extra-light-black;
   opacity: 0.3;
   transition: 0.25s;
@@ -69,7 +61,7 @@
   fill: $pink;
 }
 
-.background-editor__tablet-list {
+.background__editor--tablet-list {
   display: none;
   list-style: none;
   padding: 0;
@@ -99,7 +91,7 @@
   }
 }
 
-.phone-range {
+.background__editor--phone-range {
   @include tablets {
     display: none;
   }
@@ -196,7 +188,7 @@
   margin: 0;
 }
 
-.background-effects {
+.background__effects {
   display: flex;
   flex-direction: column;
   margin-bottom: 34px;
@@ -218,7 +210,7 @@
 }
 
 
-.background-editor {
+.background__editor--block {
   @include desktop {
     display: flex;
     flex-direction: column;
@@ -226,7 +218,7 @@
   }
 }
 
-.background-editor-button {
+.background__editor--button {
   @include desktop {
     display: flex;
     gap: 44px;

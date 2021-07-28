@@ -1,5 +1,4 @@
-
-.applications-block {
+.applications__block {
   background-color: $grey;
   margin-bottom: 42px;
 
@@ -24,13 +23,13 @@
 }
 
 
-.applications-title_phones {
+.applications__title--phones {
   @include phones {
     display: none;
   }
 }
 
-.applications-title {
+.applications__title {
   max-width: 181px;
   text-transform: uppercase;
   font-weight: 400;
