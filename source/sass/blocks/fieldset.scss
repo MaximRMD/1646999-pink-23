@@ -1,0 +1,9 @@
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+
+  @include tablets {
+    border: solid $light-grey 2px;
+  }
+}

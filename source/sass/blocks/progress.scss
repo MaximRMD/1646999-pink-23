@@ -1,0 +1,117 @@
+.rogress__checkbox {
+  display: flex;
+  flex-wrap: nowrap;
+  list-style: none;
+  margin-bottom: 0;
+  padding: 0;
+  flex-direction: column;
+
+  @include desktop {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-bottom: 0;
+    padding: 0;
+    flex-direction: row;
+  }
+}
+
+.progress {
+  background-color: $grey;
+  margin-bottom: 42px;
+
+  @include tablets {
+    background-color: $white;
+    margin-bottom: 65px;
+  }
+
+  @include desktop {
+    margin-bottom: 64px;
+    order: 3;
+  }
+}
+
+.write-block {
+  @include desktop {
+    order: 2;
+  }
+}
+
+.progress__title {
+  text-transform: uppercase;
+  max-width: 222px;
+  color: $pink;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  margin-bottom: 44px;
+  text-align: center;
+  padding-top: 42px;
+
+  @include tablets {
+    max-width: 374px;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-top: initial;
+  }
+}
+
+.progress__title-fuul--width {
+  @include tablets {
+    max-width: 574px;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+}
+
+.progress__point {
+  font-size: 18px;
+  line-height: 30px;
+  color: $extra-light-black;
+  font-weight: 400;
+  padding-left: 1.2em;
+  margin-bottom: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  min-width: 284px;
+}
+
+.progress__checkbox-item {
+  margin-bottom: 47px;
+  margin-left: 62px;
+}
+
+.progress__checkbox-input:checked+label .progress__check-box {
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+}
+
+.progress__check-box {
+  width: 39px;
+  height: 39px;
+  cursor: pointer;
+  margin-right: 22px;
+  transition: 0.25s;
+  border: 2px $light-grey solid;
+  border-radius: 4px;
+  background-color: $white;
+  background-position: center;
+
+  &:hover {
+    border-color: $black;
+  }
+
+  &:active {
+    border-color: $pink;
+  }
+}
+
+
+.progress__checkbox-input {
+  padding-left: 2.2em;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: absolute;
+}

@@ -1,0 +1,161 @@
+.header__pink-logo--visible-phone {
+  @include tablets {
+    display: none;
+  }
+}
+
+.header__pink-logo--visible-tablet {
+
+  display: none;
+
+
+  @include tablets {
+    display: block;
+  }
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.header__pink-logo--visible-desktop {
+
+  display: none;
+
+
+  @include tablets {
+    display: none;
+  }
+
+  @include desktop {
+    display: block;
+  }
+}
+
+
+.header__pink-logo {
+  fill: $white;
+  transition: 0.25s;
+
+  &:hover {
+    fill: $pink;
+  }
+
+  &:active {
+    fill: $white;
+    opacity: 0.3;
+  }
+}
+
+.header {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header__home-page {
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: top;
+
+  @include tablets {
+    border-bottom: solid 1px transparent;
+    margin-bottom: 100px;
+  }
+
+  @include desktop {
+    margin-bottom: 100px;
+  }
+
+  @include retina {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
+
+  @include tablets {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+
+    @include retina {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
+  }
+
+  @include desktop {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+
+    @include retina {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
+  }
+}
+
+.header__logo-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 21px;
+  padding-bottom: 21px;
+
+  @include desktop {
+    margin-right: auto;
+  }
+}
+
+.header__top {
+  @include desktop {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.header__top-wrapper {
+  background-color: $extra-light-black;
+}
+
+.header__top-close .header__top-wrapper {
+  background-color: rgba(0, 0, 0, 0.3);
+
+  @include desktop {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.header__top-wrapper--closed .main-nav {
+  display: none;
+}
+
+.header__top-close .site-list {
+  @include not-desktop {
+    display: none;
+  }
+}
+
+.header__top_nojs {
+  @include not-desktop {
+    & .header__top-wrapper {
+      background-color: #283645;
+    }
+
+    & .site-list {
+      display: block;
+    }
+
+    & .main-nav__wrapper {
+      display: block;
+    }
+
+    & .nav-toggle_open {
+      display: none;
+    }
+
+    & .nav-toggle_closed {
+      display: none;
+    }
+  }
+}
+
+.header__top_close .nav-toggle_closed {
+  display: none;
+}
+
+.header__top_open .nav-toggle_open {
+  display: none;
+}

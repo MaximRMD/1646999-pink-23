@@ -1,7 +1,7 @@
 # Личный проект «Пинк» 
 
-* Студент: [Максим Руднев](https://up.htmlacademy.ru/adaptive/23/user/1646999).
-* Наставник: `Неизвестно`.
+* Студент: [Максим Руднев](https://up.htmlacademy.ru/adaptive/22/user/1646999).
+* Наставник: [Максим Иванов](https://htmlacademy.ru/profile/id342945).
 
 ---
 
@@ -24,7 +24,7 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`,
 
 #### 2. Создайте форк
 
-[Откройте мастер-репозиторий](https://github.com/htmlacademy-adaptive/1646999-pink-23) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии будет скопирован в ваш аккаунт.
+[Откройте мастер-репозиторий](https://github.com/htmlacademy-adaptive/1646999-pink-22) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии будет скопирован в ваш аккаунт.
 
 <img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808088-259e3a80-a190-11e9-98f7-3c0edd9740f5.jpg">
 
@@ -54,5 +54,5 @@ git clone SSH-адрес_вашего_форка
 
 Репозиторий создан для обучения на профессиональном онлайн‑курсе «[HTML и CSS. Адаптивная вёрстка и автоматизация](https://htmlacademy.ru/intensive/adaptive)» от [HTML Academy](https://htmlacademy.ru).
 
-[check-image]: https://github.com/htmlacademy-adaptive/1646999-pink-23/workflows/Project%20check/badge.svg?branch=master
-[check-url]: https://github.com/htmlacademy-adaptive/1646999-pink-23/actions
+[check-image]: https://github.com/htmlacademy-adaptive/1646999-pink-22/workflows/Project%20check/badge.svg?branch=master
+[check-url]: https://github.com/htmlacademy-adaptive/1646999-pink-22/actions

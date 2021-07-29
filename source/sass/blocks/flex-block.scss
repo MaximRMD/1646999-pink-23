@@ -1,0 +1,6 @@
+.flex-block {
+  @include desktop {
+    display: flex;
+    order: -1;
+  }
+}

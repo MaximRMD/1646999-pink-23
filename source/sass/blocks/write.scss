@@ -1,0 +1,38 @@
+.write__input {
+  font-weight: 400;
+  color: $extra-light-black;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 24px;
+  width: 100%;
+  border: 2px solid $light-grey;
+  border-radius: 1px;
+  transition: 0.25s;
+
+  @include tablets {
+    order: -1;
+    margin-bottom: 22px;
+  }
+
+  &:hover {
+    border-color: $extra-light-black;
+  }
+}
+
+.write__form {
+  margin-bottom: 44px;
+
+  @include tablets {
+    margin-bottom: 65px;
+  }
+
+  @include desktop {
+    margin-bottom: 64px;
+  }
+}
+
+.write__item {
+  @include desktop {
+    display: flex;
+  }
+}

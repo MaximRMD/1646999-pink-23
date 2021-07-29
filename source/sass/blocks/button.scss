@@ -1,0 +1,109 @@
+.button {
+  max-width: 282px;
+  display: inline-block;
+  border: 3px solid $white;
+  box-sizing: border-box;
+  border-radius: 35px;
+  padding-left: 35px;
+  padding-right: 38px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: $white;
+  text-decoration: none;
+  transition: 0.25s;
+  width: 100%;
+
+  @include tablets {
+    max-width: 300px;
+  }
+
+  @include desktop {
+    font-size: 21px;
+
+  }
+
+  &:hover {
+    background-color: $white;
+    color: $pink;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+    background-color: $white;
+  }
+}
+
+.button__post {
+  cursor: pointer;
+  transition: 0.25s;
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: $pink;
+  border: 3px solid $pink;
+  border-radius: 30px;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  padding-left: 90px;
+  padding-right: 90px;
+  text-align: center;
+  display: block;
+  width: 100%;
+
+  @include tablets {
+    max-width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+
+    @include desktop {
+      max-width: 183px;
+      padding-left: 42px;
+      padding-right: 42px;
+    }
+  }
+
+  &:hover {
+    background-color: $pink;
+    color: $white;
+  }
+
+  &:active {
+    background-color: $pink;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.button__green {
+  background: $green;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: $white;
+  border: none;
+  transition: 0.25s;
+  text-transform: uppercase;
+  cursor: pointer;
+  max-width: 296px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  &:hover {
+    background-color: $green-dark;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.button__green--close {
+  padding-right: 75px;
+  padding-left: 75px;
+}

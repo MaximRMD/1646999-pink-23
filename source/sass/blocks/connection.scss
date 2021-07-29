@@ -1,0 +1,55 @@
+.connection__title {
+  max-width: 228px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  color: $extra-light-black;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include tablets {
+    max-width: 370px;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  @include desktop {
+    max-width: 462px;
+    font-size: 50px;
+    line-height: 68px;
+  }
+}
+
+.connection__subtitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: $extra-light-black;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 13px;
+}
+
+.connection__info {
+  text-align: center;
+  margin-bottom: 32px;
+
+  @include tablets {
+    width: 50%;
+  }
+}
+
+.connection__address-link-street {
+  max-width: 211px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.connection__blocks {
+  @include tablets {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}

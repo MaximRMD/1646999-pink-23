@@ -1,0 +1,12 @@
+.input-title {
+  text-transform: uppercase;
+  color: $pink;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  margin-right: 20px;
+
+  @include tablets {
+    margin-left: 20px;
+  }
+}

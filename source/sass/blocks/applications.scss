@@ -1,0 +1,52 @@
+.applications__block {
+  background-color: $grey;
+  margin-bottom: 42px;
+
+  @include tablets {
+    background-color: $white;
+    margin-bottom: 65px;
+  }
+
+  @include desktop {
+    margin-bottom: 64px;
+    order: 1;
+  }
+
+  &.container {
+    @include desktop {
+      width: 50%;
+      max-width: 431px;
+      padding: 0;
+      margin-left: 74px;
+    }
+  }
+}
+
+
+.applications__title--phones {
+  @include phones {
+    display: none;
+  }
+}
+
+.applications__title {
+  max-width: 181px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: $pink;
+  margin-bottom: 52px;
+  padding-top: 42px;
+
+  @include tablets {
+    background-color: $white;
+    line-height: 30px;
+    max-width: 369px;
+    padding-right: 25px;
+    padding-left: 25px;
+    display: block;
+    padding-top: initial;
+  }
+}

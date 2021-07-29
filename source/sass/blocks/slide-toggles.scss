@@ -1,0 +1,27 @@
+.slide-toggles {
+  margin-bottom: 49px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.slide-toggles__button {
+  border: none;
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  background-color: rgba(40, 54, 69, 0.3);
+  padding: 0;
+  margin-right: 19px;
+}
+
+
+.slide-toggles__button_selected {
+  background-color: $white;
+  border: solid 3px $extra-light-black;
+  box-sizing: content-box;
+}
