@@ -1,4 +1,4 @@
-.phone-smile-pink__img {
+.phone__smile-pink--img {
   @include tablets {
     max-width: initial;
     position: relative;
@@ -7,7 +7,7 @@
   }
 }
 
-.phone-image {
+.phone__image {
   position: relative;
   top: 5px;
 
@@ -26,7 +26,7 @@
 }
 
 
-.phone-smile-pink {
+.phone__smile-pink {
   width: 157px;
   height: 320px;
   padding: 0;

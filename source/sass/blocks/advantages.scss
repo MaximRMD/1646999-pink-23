@@ -172,13 +172,3 @@
     padding-top: 36px;
   }
 }
-
-
-.phone__smile-pink__img {
-  @include tablets {
-    max-width: initial;
-    position: relative;
-    bottom: 198px;
-    right: 112px;
-  }
-}
