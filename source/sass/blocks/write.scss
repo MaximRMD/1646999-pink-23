@@ -1,13 +1,15 @@
 .write__input {
+  font-family: "Open sans", "Arial", sans-serif;
   font-weight: 400;
   color: $extra-light-black;
   font-size: 18px;
   line-height: 30px;
-  padding: 24px;
+  padding: 15px 0 14px 20px;
   width: 100%;
   border: 2px solid $light-grey;
   border-radius: 1px;
   transition: 0.25s;
+  margin-top: 5px;
 
   @include tablets {
     order: -1;

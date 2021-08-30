@@ -11,16 +11,12 @@
   }
 }
 
-.footer {
-  padding-top: 40px;
-}
-
 .footer__item-social {
   border: 3px solid $light-grey;
   border-radius: 50%;
-  margin-right: 9px;
-  height: 48px;
-  width: 48px;
+  margin-right: 8px;
+  height: 55px;
+  width: 55px;
   background-color: $white;
   white-space: nowrap;
   text-indent: 100%;
@@ -32,6 +28,12 @@
   background-position-x: 50%;
   background-position-y: 50%;
 
+  @include desktop {
+    height: 55px;
+    width: 55px;
+    margin-right: 6px;
+  }
+
   &:hover {
     border-color: $extra-light-black;
   }
@@ -42,7 +44,7 @@
 }
 
 .footer__logo-block {
-  margin-bottom: 41px;
+  margin-bottom: 32px;
 }
 
 .footer__logo-pink {
@@ -62,12 +64,16 @@
 
 .footer__list {
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 38px;
   padding: 0;
   display: flex;
   justify-content: center;
-}
 
+  @include desktop {
+    position: relative;
+    right: -8px;
+  }
+}
 
 .footer__item-social_twit {
   background-image: url(../img/twitter.svg);
@@ -79,4 +85,5 @@
 
 .footer__item-social_you {
   background-image: url(../img/youtube.svg);
+  margin-right: 0;
 }

@@ -15,12 +15,11 @@
     position: absolute;
     top: initial;
     bottom: -48px;
-    right: 20px;
   }
 
   @include desktop {
     max-width: initial;
-    right: 0;
+    right: 124px;
     bottom: -132px;
   }
 }
@@ -31,7 +30,7 @@
   height: 320px;
   padding: 0;
   position: relative;
-  top: 77px;
+  top: 43px;
 
   @include tablets {
     order: -1;

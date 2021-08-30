@@ -1,27 +1,39 @@
 .main-title {
-  max-width: 172px;
-  padding-top: 102px;
+  max-width: 226px;
   margin: 0;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 51px;
+  margin-bottom: 19px;
   text-align: center;
   font-size: 24px;
-  line-height: 33px;
+  line-height: 135%;
   color: $white;
   font-weight: 300;
 
   @include tablets {
-    max-width: 300px;
-    text-align: center;
-    font-size: 50px;
+    font-weight: 300;
+    font-size: 40px;
     line-height: 120%;
-    margin-bottom: 143px;
+    margin-bottom: 0;
+    padding-top: 95px;
+    max-width: 270px;
+    margin: 0;
+    padding-left: 70px;
   }
 
   @include desktop {
-    font-size: 50px;
+    position: relative;
+    top: 16px;
     line-height: 68px;
-    margin-bottom: 104px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 103px;
+    font-size: 50px;
+    max-width: 357px;
   }
+}
+
+.main-title__position {
+margin-bottom: 77px;
 }

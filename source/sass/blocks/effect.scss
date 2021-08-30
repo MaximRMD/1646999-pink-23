@@ -38,6 +38,7 @@
     max-width: 534px;
     font-size: 18px;
     line-height: 30px;
+    margin-bottom: 47px;
   }
 }
 
@@ -57,5 +58,23 @@
 
   @include desktop {
     display: flex;
+  }
+}
+
+.effect__svg--24hors-tablets {
+  @include desktop {
+    display: none;
+  }
+}
+
+
+.effect__svg--24hors-desktop {
+  @include tablets {
+    display: none;
+  }
+
+  @include desktop {
+    display: block;
+    margin-bottom: 68px;
   }
 }

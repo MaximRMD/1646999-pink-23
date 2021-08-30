@@ -2,7 +2,7 @@
   background-color: $grey;
   margin-bottom: 20px;
   border-bottom: 1px solid transparent;
-  padding-bottom: 26px;
+  padding-bottom: 17px;
   display: flex;
   flex-direction: column;
 
@@ -13,8 +13,8 @@
 
 .comment-background__name-paragraph {
   margin: 0;
+  margin-top: 13px;
   text-transform: uppercase;
-  margin-bottom: 14px;
   font-weight: 300;
   font-size: 12px;
   line-height: 24px;
@@ -25,6 +25,8 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
+  margin: 0;
+  margin-bottom: 11px;
   color: $extra-light-black;
 
   @include tablets {
@@ -61,7 +63,7 @@
   font-size: 12px;
   line-height: 24px;
   font-weight: 400;
-  max-width: 90px;
+  min-width: 90px;
   text-transform: uppercase;
   margin: 0;
 }
@@ -79,6 +81,7 @@
   font-weight: 700;
   color: $extra-light-black;
   text-transform: none;
+  margin-right: 3px;
 }
 
 .comment-background__name-image {
@@ -86,7 +89,6 @@
   min-height: 180px;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 26px;
 
   @include tablets {
     width: 100%;

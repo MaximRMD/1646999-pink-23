@@ -1,6 +1,6 @@
 .item-paragraph {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 17px;
   width: 100%;
   max-width: 298px;
   margin-left: auto;
@@ -20,11 +20,7 @@
 }
 
 .item-paragraph:nth-last-child(1) {
-
   @include desktop {
     margin-bottom: 0;
   }
-
 }
-
-

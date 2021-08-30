@@ -3,7 +3,7 @@
   padding-top: 20px;
   border-bottom: 1px solid transparent;
   padding-bottom: 41px;
-  margin-bottom: 57px;
+  margin-bottom: 39px;
 
   @include tablets {
     display: flex;
@@ -14,7 +14,7 @@
 }
 
 .background__editor-img {
-  margin-bottom: 26px;
+  margin-bottom: 37px;
 
   @include tablets {
     margin-right: 48px;
@@ -31,7 +31,7 @@
   flex-direction: row;
   justify-content: center;
   column-gap: 35px;
-  margin-bottom: 35px;
+  margin-bottom: 37px;
 
   @include tablets {
     display: none;
@@ -76,11 +76,10 @@
 
 .background__editor-range {
   min-width: 240px;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: transparent;
-  -webkit-appearance: none;
-
+  appearance: none;
 
   @include desktop {
     min-width: 288px;
@@ -114,7 +113,7 @@
   border: 2px solid $pink;
   border-radius: 50px;
   cursor: pointer;
-  -webkit-appearance: none;
+  appearance: none;
   transition: 0.25s;
 
   &:hover {
@@ -185,13 +184,13 @@
 }
 
 @supports (-ms-ime-align:auto) {
-  margin: 0;
+  //margin: 0;
 }
 
 .background__effects {
   display: flex;
   flex-direction: column;
-  margin-bottom: 34px;
+  margin-bottom: 71px;
 }
 
 .background__editor-effects::after {
