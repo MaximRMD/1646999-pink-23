@@ -59,7 +59,7 @@
 
   @include tablets {
     border-bottom: solid 1px transparent;
-    margin-bottom: 100px;
+    margin-bottom: 91px;
   }
 
   @include desktop {
@@ -87,6 +87,10 @@
   }
 }
 
+.header__home-page--form {
+  margin-bottom: 89px;
+}
+
 .header__logo-wrapper {
   display: flex;
   justify-content: space-between;
@@ -107,6 +111,10 @@
 
 .header__top {
   margin-bottom: 22px;
+
+  @include tablets {
+    margin-bottom: 66px;
+  }
 
   @include desktop {
     display: flex;

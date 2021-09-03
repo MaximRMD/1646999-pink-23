@@ -7,6 +7,14 @@
   margin-left: 23px;
 
   @include tablets {
-    margin-left: 20px;
+    margin-left: 0;
+    margin-right: 18px;
+  }
+}
+
+.input-title__contact {
+  @include tablets {
+    margin-left: 18px;
+    margin-right: 0;
   }
 }

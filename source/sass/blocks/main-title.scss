@@ -12,13 +12,13 @@
 
   @include tablets {
     font-weight: 300;
-    font-size: 40px;
-    line-height: 120%;
-    margin-bottom: 0;
-    padding-top: 95px;
-    max-width: 270px;
+    font-size: 50px;
+    line-height: 68px;
     margin: 0;
-    padding-left: 70px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0;
+    max-width: 358px;
   }
 
   @include desktop {
@@ -35,5 +35,5 @@
 }
 
 .main-title__position {
-margin-bottom: 77px;
+  margin-bottom: 126px;
 }

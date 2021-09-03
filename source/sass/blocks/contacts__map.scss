@@ -14,6 +14,7 @@
   @include tablets {
     background-image: url("../img/bg-map-tablet@1x.jpg");
     height: 374px;
+    margin-bottom: 33px;
 
     @include retina {
       background-image: url("../img/bg-map-tablet@2x.jpg");

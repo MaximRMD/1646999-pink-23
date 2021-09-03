@@ -11,6 +11,10 @@
   margin-right: 29px;
   transition: 0.25s;
 
+  @include tablets {
+    margin-right: 21px;
+  }
+
   &:hover {
     border-color: $extra-light-black;
   }

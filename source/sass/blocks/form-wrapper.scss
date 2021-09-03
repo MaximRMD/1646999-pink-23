@@ -3,4 +3,8 @@
   display: flex;
   width: 100%;
   justify-content: center;
+
+  @include tablets {
+    flex-direction: column;
+  }
 }

@@ -2,8 +2,8 @@
   @include tablets {
     max-width: initial;
     position: relative;
-    bottom: 198px;
-    right: 112px;
+    bottom: 178px;
+    right: 111px;
   }
 }
 
@@ -14,7 +14,7 @@
   @include tablets {
     position: absolute;
     top: initial;
-    bottom: -48px;
+    bottom: 0;
   }
 
   @include desktop {

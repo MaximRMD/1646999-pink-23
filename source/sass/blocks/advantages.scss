@@ -33,6 +33,7 @@
   color: $extra-light-black;
 
   @include tablets {
+    margin-bottom: 34px;
     max-width: 310px;
     text-align: start;
   }
@@ -56,7 +57,7 @@
     overflow: initial;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-end;
   }
 }
 
@@ -103,7 +104,7 @@
   align-items: center;
 
   @include tablets {
-    margin-bottom: 47px;
+    margin-bottom: 30px;
   }
 
   @include desktop {
@@ -122,7 +123,7 @@
 
   @include tablets {
     position: relative;
-    bottom: 35px;
+    bottom: 39px;
   }
 
   @include desktop {
@@ -132,7 +133,7 @@
 }
 
 .advantages__list:nth-last-of-type(1) {
-  margin-bottom: 0px;
+  margin-bottom: 6px;
 }
 
 .advantages__illustration {
@@ -160,6 +161,10 @@
   clip-path: polygon(0 0, 100% 0, 0 4%);
   top: 0;
   left: 0;
+
+  @include tablets {
+    clip-path: polygon(0 0, 100% 0, 0 10%);
+  }
 }
 
 .advantages__block {

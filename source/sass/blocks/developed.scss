@@ -9,6 +9,12 @@
   align-items: center;
   cursor: pointer;
 
+  @include tablets {
+    position: relative;
+    top: 11px;
+    line-height: 10px;
+  }
+
   @include desktop {
     font-size: 18px;
     line-height: 18px;

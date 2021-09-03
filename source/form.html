@@ -14,7 +14,7 @@
 
 <body class="page__body">
   <header class="header">
-    <div class="header-block header__home-page ">
+    <div class="header-block header__home-page header__home-page--form">
       <div class="header__top header__top_close header__top_nojs">
         <!--header__top-close!-->
         <div class="header__top-wrapper container">
@@ -125,9 +125,9 @@
 
   <main class="page-main">
     <div class="raffle-block">
-      <p class="raffle-text">Поделитесь своей историей и получите
-        шанс выиграть ценный приз — 1000
-        миль на вашу бонусную карту!</p>
+      <p class="raffle-text">Поделитесь своей историей и получите шанс выиграть
+        ценный приз — 1000 миль на вашу бонусную карту!
+        Пожалуйста, заполните форму ниже:</p>
     </div>
     <div class="form-wrapper">
       <form class="write__form" method="POST">
@@ -198,16 +198,16 @@
 
       <div class="write container">
         <form class="write__form" method="POST">
-          <fieldset class="write__item">
+          <fieldset class="write__item write__item-contact">
             <legend class="applications__title applications__title--phones">Контактная информация</legend>
-            <p class="item-paragraph item-paragraph__form">
-              <label class="input-title" for="phone">Номер телефона</label><br>
-              <input class="write__input write-input-name" id="phone" type="text" name="phone"
+            <p class="item-paragraph item-paragraph__contact">
+              <label class="input-title input-title__contact" for="phone">Номер телефона</label><br>
+              <input class="write__input write__input-contact" id="phone" type="text" name="phone"
                 placeholder="Номер, пожалуйста">
             </p>
-            <p class="item-paragraph item-paragraph__form">
-              <label class="input-title" for="email">Адрес почты</label><br>
-              <input class="write__input write-input-email" id="email" type="email" name="email"
+            <p class="item-paragraph item-paragraph__contact">
+              <label class="input-title input-title__contact" for="email">Адрес почты</label><br>
+              <input class="write__input write__input-contact" id="email" type="email" name="email"
                 placeholder="Введите почту *">
             </p>
           </fieldset>

@@ -20,9 +20,10 @@
   @include tablets {
     max-width: 300px;
     padding-left: 32px;
-    padding-right: 32px;
+    padding-right: 28px;
     padding-top: 15px;
-    padding-bottom: 21px;
+    padding-bottom: 16px;
+    margin-bottom: 46px;
   }
 
   @include desktop {
@@ -100,6 +101,12 @@
   cursor: pointer;
   max-width: 296px;
   padding: 17px 48px 16px 48px;
+
+  @include tablets {
+    padding-left: 57px;
+    padding-right: 55px;
+    min-width: 300px;
+  }
 
   &:hover {
     background-color: $green-dark;

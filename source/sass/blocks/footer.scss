@@ -69,6 +69,11 @@
   display: flex;
   justify-content: center;
 
+  @include tablets  {
+    position: relative;
+    right: 7px;
+  }
+
   @include desktop {
     position: relative;
     right: -8px;

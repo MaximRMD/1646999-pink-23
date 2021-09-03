@@ -13,6 +13,8 @@
     background-color: transparent;
     position: relative;
     min-width: 335px;
+    padding-top: 30px;
+    padding-bottom: 115px;
   }
 
   @include desktop {
@@ -46,6 +48,10 @@
 
 .download-aplication__os {
   margin-bottom: 20px;
+
+  @include tablets {
+    margin-bottom: 31px;
+  }
 
   @include desktop {
     margin-bottom: 46px;

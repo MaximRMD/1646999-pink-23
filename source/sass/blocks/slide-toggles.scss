@@ -6,8 +6,9 @@
   justify-content: center;
 
   @include tablets {
-    display: none;
+    margin-bottom: 14px;
   }
+
 }
 
 .slide-toggles__button {
@@ -29,4 +30,8 @@
 
 .slide-toggles__low {
   margin-bottom: 43px;
+
+  @include tablets {
+    display: none;
+  }
 }

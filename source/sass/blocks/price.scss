@@ -5,6 +5,10 @@
   border-bottom: 1px solid transparent;
   margin-bottom: 41px;
 
+  @include tablets {
+    padding-top: 98px;
+  }
+
   @include desktop {
     margin-bottom: 69px;
   }
@@ -20,6 +24,10 @@
   clip-path: polygon(0 0, 100% 0, 0 4%);
   top: 0;
   left: 0;
+
+  @include tablets {
+    clip-path: polygon(0 0, 100% 0, 0 8%);
+  }
 }
 
 .price__position {
@@ -81,6 +89,8 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
 
   @include desktop {
@@ -114,7 +124,7 @@
     text-transform: uppercase;
     font-weight: 300;
     font-size: 18px;
-    line-height: 30px;
+    line-height: 25px;
   }
 
   @include desktop {
@@ -131,6 +141,10 @@
   font-size: 14px;
   line-height: 30px;
   color: $extra-light-black;
+
+  @include tablets {
+    text-transform: none;
+  }
 
   @include desktop {
     text-transform: none;
@@ -151,6 +165,7 @@
   padding-left: 41px;
 
   @include tablets {
+    min-height: 47px;
     justify-content: center;
   }
 }
@@ -164,6 +179,10 @@
   min-height: 60px;
   align-items: center;
   padding-left: 17px;
+
+  @include tablets {
+    min-height: 47px;
+  }
 }
 
 .price__wrapper {
@@ -174,6 +193,9 @@
 
   @include tablets {
     margin-bottom: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 0;
   }
 
   @include desktop {

@@ -4,7 +4,8 @@
 
   @include tablets {
     background-color: $white;
-    margin-bottom: 65px;
+    margin-bottom: 53px;
+    order: -2;
   }
 
   @include desktop {
@@ -19,13 +20,6 @@
       padding: 0;
       margin-left: 74px;
     }
-  }
-}
-
-
-.applications__title--phones {
-  @include phones {
-    display: none;
   }
 }
 
@@ -48,5 +42,17 @@
     padding-left: 25px;
     display: block;
     padding-top: initial;
+    margin-bottom: 36px;
+  }
+}
+
+.applications__title--phones {
+  @include phones {
+    display: none;
+  }
+
+  @include tablets {
+    margin-bottom: 29px;
+    display: block;
   }
 }

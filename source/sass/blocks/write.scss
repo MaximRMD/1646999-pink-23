@@ -1,3 +1,7 @@
+.write {
+  order: -1;
+}
+
 .write__input {
   font-family: "Open sans", "Arial", sans-serif;
   font-weight: 400;
@@ -13,7 +17,9 @@
 
   @include tablets {
     order: -1;
-    margin-bottom: 22px;
+    margin: 0;
+    margin-bottom: 6px;
+    padding-top: 16px;
   }
 
   &:hover {
@@ -25,7 +31,8 @@
   margin-bottom: 44px;
 
   @include tablets {
-    margin-bottom: 65px;
+    margin-bottom: 3px;
+    order: -3;
   }
 
   @include desktop {
@@ -37,4 +44,19 @@
   @include desktop {
     display: flex;
   }
+}
+
+.write__input-contact {
+  @include tablets {
+    min-width: 496px;
+    margin-bottom: 9px;
+  }
+}
+
+.item-paragraph__contact:nth-last-of-type(1) {
+  margin-bottom: 4px;
+}
+
+.write__item-contact {
+  margin-bottom: 59px;
 }
