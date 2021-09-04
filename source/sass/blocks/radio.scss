@@ -1,0 +1,8 @@
+.radio {
+  padding-left: 0;
+  margin: 0;
+
+  @include tablets {
+    margin-bottom: 53px;
+  }
+}

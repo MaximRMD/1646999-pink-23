@@ -1,7 +1,6 @@
-
 .advantages__title {
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 12px;
   min-width: 280px;
   text-align: center;
   font-size: 18px;
@@ -17,7 +16,7 @@
     font-size: 30px;
     line-height: 30px;
     max-width: 240px;
-    margin-bottom: 35px;
+    margin-bottom: 21px;
   }
 }
 
@@ -26,6 +25,7 @@
   max-width: 280px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 31px;
   text-align: center;
   font-weight: 400;
   font-size: 14px;
@@ -33,12 +33,13 @@
   color: $extra-light-black;
 
   @include tablets {
+    margin-bottom: 34px;
     max-width: 310px;
     text-align: start;
   }
 
   @include desktop {
-    max-width: 235px;
+    max-width: 245px;
     font-size: 18px;
     line-height: 30px;
     text-align: center;
@@ -56,10 +57,9 @@
     overflow: initial;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-end;
   }
 }
-
 
 .advantages__offer {
   text-align: center;
@@ -67,7 +67,7 @@
   font-size: 24px;
   line-height: 120%;
   margin: 0;
-  margin-bottom: 46px;
+  margin-bottom: 32px;
   max-width: 280px;
   margin-left: auto;
   margin-right: auto;
@@ -95,7 +95,7 @@
   }
 
   @include desktop {
-    max-width: 410px;
+    max-width: 418px;
   }
 }
 
@@ -104,12 +104,16 @@
   align-items: center;
 
   @include tablets {
-    margin-bottom: 47px;
+    margin-bottom: 30px;
   }
 
   @include desktop {
-    margin-bottom: 72px;
+    margin-bottom: 56px;
   }
+}
+
+.advantages__subtitle--last-margin {
+  margin-bottom: -2px;
 }
 
 .advantages__list {
@@ -119,17 +123,20 @@
 
   @include tablets {
     position: relative;
-    bottom: 35px;
+    bottom: 39px;
   }
 
   @include desktop {
     display: flex;
-    margin-bottom: 59px;
+    margin-bottom: 32px;
   }
 }
 
-.advantages__illustration {
+.advantages__list:nth-last-of-type(1) {
+  margin-bottom: 6px;
+}
 
+.advantages__illustration {
   @include phones {
     display: none;
   }
@@ -140,7 +147,7 @@
 
   @include desktop {
     display: block;
-    margin-bottom: 59px;
+    margin-bottom: 43px;
   }
 }
 
@@ -151,16 +158,20 @@
   height: 100%;
   position: absolute;
   background-color: $white;
-  clip-path: polygon(0 0, 100% 0, 0 10%);
+  clip-path: polygon(0 0, 100% 0, 0 4%);
   top: 0;
   left: 0;
+
+  @include tablets {
+    clip-path: polygon(0 0, 100% 0, 0 10%);
+  }
 }
 
 .advantages__block {
   position: relative;
   background-color: $grey;
-  padding-top: 75px;
-  margin-bottom: 50px;
+  padding-top: 81px;
+  margin-bottom: 41px;
 
   @include tablets {
     overflow: hidden;
@@ -170,15 +181,6 @@
 
   @include desktop {
     padding-top: 36px;
-  }
-}
-
-
-.phone__smile-pink__img {
-  @include tablets {
-    max-width: initial;
-    position: relative;
-    bottom: 198px;
-    right: 112px;
+    margin-bottom: 69px;
   }
 }

@@ -1,37 +1,36 @@
-.phone-smile-pink__img {
+.phone__smile-pink--img {
   @include tablets {
     max-width: initial;
     position: relative;
-    bottom: 198px;
-    right: 112px;
+    bottom: 178px;
+    right: 111px;
   }
 }
 
-.phone-image {
+.phone__image {
   position: relative;
   top: 5px;
 
   @include tablets {
     position: absolute;
     top: initial;
-    bottom: -48px;
-    right: 20px;
+    bottom: 0;
   }
 
   @include desktop {
     max-width: initial;
-    right: 0;
+    right: 124px;
     bottom: -132px;
   }
 }
 
 
-.phone-smile-pink {
+.phone__smile-pink {
   width: 157px;
   height: 320px;
   padding: 0;
   position: relative;
-  top: 77px;
+  top: 43px;
 
   @include tablets {
     order: -1;

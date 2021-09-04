@@ -10,6 +10,10 @@
   transition: 0.25s;
   cursor: pointer;
 
+  @include desktop {
+    display: none;
+  }
+
   &:hover {
     fill: $pink;
   }
@@ -20,12 +24,12 @@
   }
 }
 
-.nav-toggle_open {
+.nav-toggle__closed {
+  display: none;
+}
+
+.nav-toggle__open {
   @include desktop {
     display: none;
   }
-}
-
-.nav-toggle_closed {
-  display: block;
 }

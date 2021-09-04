@@ -2,6 +2,10 @@
   @include tablets {
     max-width: 50%;
   }
+
+  @include desktop {
+    max-width: 56%;
+  }
 }
 
 .header-block {

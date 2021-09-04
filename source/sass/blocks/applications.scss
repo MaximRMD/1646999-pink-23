@@ -1,10 +1,11 @@
 .applications__block {
   background-color: $grey;
-  margin-bottom: 42px;
+  margin-bottom: 45px;
 
   @include tablets {
     background-color: $white;
-    margin-bottom: 65px;
+    margin-bottom: 53px;
+    order: -2;
   }
 
   @include desktop {
@@ -22,13 +23,6 @@
   }
 }
 
-
-.applications__title--phones {
-  @include phones {
-    display: none;
-  }
-}
-
 .applications__title {
   max-width: 181px;
   text-transform: uppercase;
@@ -37,8 +31,8 @@
   line-height: 18px;
   text-align: center;
   color: $pink;
-  margin-bottom: 52px;
-  padding-top: 42px;
+  margin-bottom: 33px;
+  padding-top: 20px;
 
   @include tablets {
     background-color: $white;
@@ -48,5 +42,17 @@
     padding-left: 25px;
     display: block;
     padding-top: initial;
+    margin-bottom: 36px;
+  }
+}
+
+.applications__title--phones {
+  @include phones {
+    display: none;
+  }
+
+  @include tablets {
+    margin-bottom: 29px;
+    display: block;
   }
 }

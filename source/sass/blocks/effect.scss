@@ -10,6 +10,10 @@
   font-size: 18px;
   line-height: 30px;
   color: $pink;
+
+  @include tablets {
+    font-size: 14px;
+  }
 }
 
 
@@ -18,6 +22,10 @@
   font-size: 30px;
   line-height: 30px;
   font-weight: 700;
+
+  @include tablets {
+    line-height: 37px;
+  }
 }
 
 .effect__subtitle {
@@ -28,9 +36,10 @@
   margin-bottom: 47px;
 
   @include tablets {
-    max-width: 310px;
+    max-width: 307px;
     font-size: 14px;
     line-height: 24px;
+    margin: 0;
     margin-bottom: 24px;
   }
 
@@ -38,6 +47,7 @@
     max-width: 534px;
     font-size: 18px;
     line-height: 30px;
+    margin-bottom: 47px;
   }
 }
 
@@ -51,11 +61,29 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
     gap: 72px;
+    margin-bottom: 100px;
   }
 
   @include desktop {
     display: flex;
+  }
+}
+
+.effect__svg--24hors-tablets {
+  @include desktop {
+    display: none;
+  }
+}
+
+
+.effect__svg--24hors-desktop {
+  @include tablets {
+    display: none;
+  }
+
+  @include desktop {
+    display: block;
+    margin-bottom: 68px;
   }
 }

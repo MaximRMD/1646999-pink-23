@@ -4,16 +4,19 @@
   align-items: center;
 
   @include tablets {
-    margin-bottom: 70px;
+    margin-bottom: 66px;
   }
 }
 
 .emotions__title {
+  padding-top: 0;
   margin: 0;
+  margin-bottom: 16px;
   max-width: 188px;
 
   @include tablets {
     max-width: 235px;
+    margin-bottom: 30px;
   }
 }
 
@@ -25,14 +28,14 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-bottom: 26px;
+  margin-bottom: 61px;
 }
 
 .emotions__block--tablet {
   @include tablets {
     display: flex;
-    align-items: flex-end;
-    margin-bottom: 50px;
+    align-items: baseline;
+    margin-bottom: 43px;
   }
 }
 
@@ -48,17 +51,21 @@
 }
 */
 .emotions__text {
-  width: 276px;
+  font-family: "Open sans", "Arial", sans-serif;
+  min-width: 280px;
   border: $light-grey solid 2px;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
   color: $extra-light-black;
   text-align: center;
-  margin-bottom: 52px;
+  margin-bottom: 49px;
+  padding-top: 14px;
 
   @include tablets {
-    width: 496px;
+    width: 499px;
+    margin-bottom: 51px;
+    padding-top: 7px;
   }
 
   @include desktop {
@@ -67,9 +74,7 @@
 }
 
 .emotions__block-tablet--button-send {
-  padding-left: 45px;
-  padding-right: 45px;
-  margin-bottom: 46px;
+  margin-bottom: 37px;
   margin-left: auto;
   margin-right: auto;
   display: flex;

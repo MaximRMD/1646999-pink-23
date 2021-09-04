@@ -1,4 +1,7 @@
 .radio-item {
   list-style: none;
-  margin-left: 62px;
+
+  @include tablets {
+    margin-left: 57px;
+  }
 }

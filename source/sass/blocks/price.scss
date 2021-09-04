@@ -1,9 +1,17 @@
 .price {
-  padding-top: 93px;
+  padding-top: 86px;
   position: relative;
   background-color: $grey;
   border-bottom: 1px solid transparent;
-  margin-bottom: 47px;
+  margin-bottom: 41px;
+
+  @include tablets {
+    padding-top: 98px;
+  }
+
+  @include desktop {
+    margin-bottom: 69px;
+  }
 }
 
 .price::before {
@@ -13,9 +21,13 @@
   height: 100%;
   position: absolute;
   background-color: $white;
-  clip-path: polygon(0 0, 100% 0, 0 6%);
+  clip-path: polygon(0 0, 100% 0, 0 4%);
   top: 0;
   left: 0;
+
+  @include tablets {
+    clip-path: polygon(0 0, 100% 0, 0 8%);
+  }
 }
 
 .price__position {
@@ -63,8 +75,32 @@
 }
 
 .price__title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
   color: $white;
   background-color: $extra-light-black;
+  padding-top: 14px;
+  padding-bottom: 29px;
+
+  @include tablets {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  @include desktop {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    padding-top: 14px;
+    padding-bottom: 22px;
+  }
 
   &_icon_hit::before {
     content: attr(title);
@@ -79,12 +115,59 @@
   }
 }
 
+.price__value {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 29px;
+
+  @include tablets {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  @include desktop {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
 .price__name {
   text-transform: uppercase;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
   color: $extra-light-black;
+
+  @include tablets {
+    text-transform: none;
+  }
+
+  @include desktop {
+    text-transform: none;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.price__icon {
+  background-color: $white;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid $light-grey;
+  border-radius: 1px 0 0 0;
+  min-height: 60px;
+  align-items: center;
+  padding-right: 40px;
+  padding-left: 41px;
+
+  @include tablets {
+    min-height: 47px;
+    justify-content: center;
+  }
 }
 
 .price__item {
@@ -95,15 +178,14 @@
   border-radius: 1px 0 0 0;
   min-height: 60px;
   align-items: center;
-  padding-right: 40px;
-  padding-left: 40px;
+  padding-left: 17px;
 
   @include tablets {
-    justify-content: center;
+    min-height: 47px;
   }
 }
 
-.price__wrapper  {
+.price__wrapper {
   padding: 0;
   display: flex;
   margin-bottom: 45px;
@@ -111,5 +193,17 @@
 
   @include tablets {
     margin-bottom: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 0;
   }
+
+  @include desktop {
+    margin-top: 53px;
+    margin-bottom: 88px;
+  }
+}
+
+.price__title_no-background {
+  background-color: transparent;
 }

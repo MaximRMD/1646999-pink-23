@@ -39,11 +39,11 @@ const styles = () => {
       autoprefixer()
     ]))
     .pipe(rename("style.css"))
-    // .pipe(gulp.dest("build/css"))
-    // .pipe(postcss([
-    //   csso()
-    // ]))
-    // .pipe(rename("style.min.css"))
+     .pipe(gulp.dest("build/css"))
+     .pipe(postcss([
+       csso()
+     ]))
+     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
@@ -167,7 +167,7 @@ const myBuild = gulp.series(
     scripts,
     images,
     //sprite,
-    createWebp,
+    //createWebp,
     copy
   )
 );

@@ -1,3 +1,11 @@
 .questions {
-  margin-bottom: 45px;
+  margin-bottom: 34px;
+
+  @include tablets {
+    margin-bottom: 33px;
+  }
+
+  @include desktop {
+    margin-bottom: 41px;
+  }
 }
