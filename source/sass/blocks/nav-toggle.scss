@@ -3,6 +3,11 @@
   border: none;
   padding: 0;
   outline: 0;
+
+  @include tablets {
+    position: relative;
+    top: 9px;
+  }
 }
 
 .nav-toggle__svg {

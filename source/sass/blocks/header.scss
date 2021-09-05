@@ -123,6 +123,16 @@
   }
 }
 
+.header__index-margin {
+  @include tablets {
+    margin-bottom: 94px;
+  }
+
+  @include desktop {
+    margin-bottom: 91px;
+  }
+}
+
 .header__top-wrapper {
   background-color: $extra-light-black;
 }
@@ -187,4 +197,10 @@
 
 .header__low-margin {
   margin-bottom: 43px;
+}
+
+.header__home-margin {
+  @include tablets {
+    margin-bottom: 46px;
+  }
 }

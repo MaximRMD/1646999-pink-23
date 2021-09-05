@@ -13,12 +13,12 @@
   @include tablets {
     font-weight: 300;
     font-size: 50px;
-    line-height: 68px;
+    line-height: 120%;
     margin: 0;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 0;
-    max-width: 358px;
+    width: 358px;
   }
 
   @include desktop {
@@ -30,10 +30,24 @@
     margin-right: auto;
     margin-bottom: 103px;
     font-size: 50px;
-    max-width: 357px;
+    width: 357px;
   }
 }
 
 .main-title__position {
-  margin-bottom: 126px;
+  margin-bottom: 76px;
+
+  @include tablets {
+    min-width: 358px;
+    margin-bottom: 126px;
+    line-height: 68px;
+  }
+}
+
+.main-title__index {
+  @include tablets {
+    font-size: 40px;
+    width: 300px;
+    margin-left: 57px;
+  }
 }

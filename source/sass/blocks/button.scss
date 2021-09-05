@@ -1,5 +1,5 @@
 .button {
-  max-width: 282px;
+  min-width: 282px;
   display: inline-block;
   border: 3px solid $white;
   box-sizing: border-box;
@@ -18,12 +18,11 @@
   width: 100%;
 
   @include tablets {
-    max-width: 300px;
-    padding-left: 32px;
-    padding-right: 28px;
+    min-width: 300px;
+    padding-right: 32px;
     padding-top: 15px;
-    padding-bottom: 16px;
     margin-bottom: 46px;
+    margin-left: 5px;
   }
 
   @include desktop {
@@ -69,13 +68,16 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 24px;
-
-    @include desktop {
-      max-width: 183px;
-      padding-left: 42px;
-      padding-right: 42px;
-    }
+    padding-right: 78px;
+    padding-left: 78px;
   }
+
+  @include desktop {
+    max-width: 183px;
+    padding-left: 42px;
+    padding-right: 42px;
+  }
+
 
   &:hover {
     background-color: $pink;

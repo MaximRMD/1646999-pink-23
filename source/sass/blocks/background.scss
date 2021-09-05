@@ -7,9 +7,9 @@
 
   @include tablets {
     display: flex;
-    padding-top: 57px;
-    padding-bottom: 54px;
-    justify-content: center;
+    padding-top: 56px;
+    padding-bottom: 47px;
+    justify-content: space-between;
   }
 }
 
@@ -17,8 +17,7 @@
   margin-bottom: 37px;
 
   @include tablets {
-    margin-right: 48px;
-    min-width: 333px;
+    margin-bottom: 0;
   }
 
   @include desktop {
@@ -45,6 +44,20 @@
   border-bottom: 1px solid rgba(40, 54, 69, 0.1);
   padding-bottom: 34px;
   padding-top: 34px;
+
+  @include tablets {
+    padding: 0;
+    padding-bottom: 41px;
+    padding-top: 9px;
+  }
+}
+
+.background__editor--tablet-item:nth-last-of-type(2) {
+  padding-top: 30px;
+}
+
+.background__editor--tablet-item:nth-last-of-type(3) {
+  padding-top: 30px;
 }
 
 .background__effects--editor-svg {
@@ -210,6 +223,10 @@
 
 
 .background__editor--block {
+  @include tablets {
+    margin-right: 11px;
+  }
+
   @include desktop {
     display: flex;
     flex-direction: column;

@@ -22,7 +22,7 @@
 
 .advantages__subtitle {
   margin: 0;
-  max-width: 280px;
+  min-width: 280px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 31px;
@@ -114,6 +114,10 @@
 
 .advantages__subtitle--last-margin {
   margin-bottom: -2px;
+
+  @include tablets {
+    margin-bottom: 4px;
+  }
 }
 
 .advantages__list {
@@ -132,9 +136,6 @@
   }
 }
 
-.advantages__list:nth-last-of-type(1) {
-  margin-bottom: 6px;
-}
 
 .advantages__illustration {
   @include phones {
