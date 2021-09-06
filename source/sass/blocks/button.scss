@@ -1,5 +1,5 @@
 .button {
-  min-width: 282px;
+  width: 282px;
   display: inline-block;
   border: 3px solid $white;
   box-sizing: border-box;
@@ -15,10 +15,9 @@
   color: $white;
   text-decoration: none;
   transition: 0.25s;
-  width: 100%;
 
   @include tablets {
-    min-width: 300px;
+    width: 300px;
     padding-right: 32px;
     padding-top: 15px;
     margin-bottom: 46px;
@@ -31,6 +30,7 @@
     padding-right: 25px;
     padding-top: 15px;
     padding-bottom: 15px;
+    margin-bottom: 69px;
   }
 
   &:hover {

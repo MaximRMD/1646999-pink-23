@@ -53,6 +53,7 @@
 .emotions__text {
   font-family: "Open sans", "Arial", sans-serif;
   min-width: 280px;
+  min-height: 200px;
   border: $light-grey solid 2px;
   font-weight: 400;
   font-size: 18px;
@@ -63,9 +64,10 @@
   padding-top: 14px;
 
   @include tablets {
+    min-height: 193px;
     width: 499px;
     margin-bottom: 51px;
-    padding-top: 7px;
+    padding-top: 14px;
   }
 
   @include desktop {

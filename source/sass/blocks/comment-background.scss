@@ -1,8 +1,7 @@
 .comment-background {
   background-color: $grey;
-  margin-bottom: 20px;
   border-bottom: 1px solid transparent;
-  padding-bottom: 17px;
+  margin-bottom: 19px;
   display: flex;
   flex-direction: column;
 
@@ -13,6 +12,8 @@
 }
 
 .comment-background__anna {
+  margin-bottom: 20px;
+
   @include tablets {
     margin-bottom: 50px;
   }
@@ -45,6 +46,7 @@
 }
 
 .comment-background__name-block {
+  padding: 14px 0 0 17px;
   max-width: 253px;
   margin-right: auto;
   flex: 1;
@@ -89,16 +91,17 @@
   align-items: center;
   column-gap: 18px;
   margin-top: auto;
+  margin-bottom: 17px;
 
   @include tablets {
     flex-direction: row-reverse;
     justify-content: space-between;
+    margin-bottom: 0;
   }
 }
 
 .comment-background__anna-like {
   @include tablets {
-
     flex-direction: row-reverse;
     column-gap: 15px;
   }

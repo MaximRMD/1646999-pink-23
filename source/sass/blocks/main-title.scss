@@ -18,19 +18,7 @@
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 0;
-    width: 358px;
-  }
-
-  @include desktop {
-    position: relative;
-    top: 16px;
-    line-height: 68px;
-    padding: 0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 103px;
-    font-size: 50px;
-    width: 357px;
+    min-width: 358px;
   }
 }
 
@@ -47,7 +35,19 @@
 .main-title__index {
   @include tablets {
     font-size: 40px;
-    width: 300px;
+    min-width: 300px;
     margin-left: 57px;
+  }
+
+  @include desktop {
+    position: relative;
+    top: 16px;
+    line-height: 68px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 54px;
+    font-size: 50px;
+    min-width: 307px;
   }
 }

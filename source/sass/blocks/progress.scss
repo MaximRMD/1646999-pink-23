@@ -19,11 +19,13 @@
 
 .progress {
   background-color: $grey;
-  margin-bottom: 32px;
+  margin-bottom: 26px;
+  order: -1;
 
   @include tablets {
     background-color: $white;
     margin-bottom: 53px;
+    order: 1;
   }
 
   @include desktop {

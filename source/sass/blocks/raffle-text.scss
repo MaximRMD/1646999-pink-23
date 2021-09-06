@@ -22,3 +22,11 @@
     max-width: 756px;
   }
 }
+
+.raffle-text__tablet {
+  display: none;
+
+  @include tablets {
+    display: block;
+  }
+}

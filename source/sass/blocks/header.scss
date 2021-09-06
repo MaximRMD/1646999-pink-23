@@ -62,10 +62,6 @@
     margin-bottom: 91px;
   }
 
-  @include desktop {
-    margin-bottom: 91px;
-  }
-
   @include retina {
     background-image: url("../img/bg-back-mobile@2x.jpg");
   }
@@ -88,7 +84,9 @@
 }
 
 .header__home-page--form {
-  margin-bottom: 89px;
+  @include tablets {
+    margin-bottom: 89px;
+  }
 }
 
 .header__logo-wrapper {
@@ -129,7 +127,7 @@
   }
 
   @include desktop {
-    margin-bottom: 91px;
+    margin-bottom: 82px;
   }
 }
 
@@ -202,5 +200,9 @@
 .header__home-margin {
   @include tablets {
     margin-bottom: 46px;
+  }
+
+  @include desktop {
+    margin-bottom: 61px;
   }
 }
