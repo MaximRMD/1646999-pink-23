@@ -42,11 +42,10 @@
 
 .connection__info {
   text-align: center;
-  ;
 
   @include tablets {
     width: 46%;
-    margin-bottom: 17px;
+    margin-bottom: 22px;
   }
 }
 
@@ -72,15 +71,28 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: nowrap;
+    margin-bottom: 19px;
   }
 }
 
 .connection__call {
   margin-bottom: 18px;
+
+  @include desktop {
+    order: -3;
+  }
 }
 
 
 .connection__address {
   margin-bottom: 22px;
 
+  @include desktop {
+    margin: 0;
+    order: -3;
+  }
+}
+
+.connection__mail {
+  margin-bottom: 22px;
 }

@@ -9,6 +9,9 @@
     margin-bottom: 14px;
   }
 
+  @include desktop {
+    display: none;
+  }
 }
 
 .slide-toggles__button {

@@ -11,8 +11,6 @@
   font-weight: 300;
 
   @include tablets {
-    font-weight: 300;
-    font-size: 50px;
     line-height: 120%;
     margin: 0;
     margin-right: auto;
@@ -22,26 +20,33 @@
   }
 }
 
-.main-title__position {
+.main-title__catalog {
   margin-bottom: 76px;
 
   @include tablets {
     min-width: 358px;
     margin-bottom: 126px;
     line-height: 68px;
+    font-size: 50px;
+  }
+
+  @include desktop {
+    margin-bottom: 88px;
   }
 }
 
 .main-title__index {
   @include tablets {
     font-size: 40px;
-    min-width: 300px;
-    margin-left: 57px;
+    min-width: 238px;
+    position: relative;
+    left: 5px;
   }
 
   @include desktop {
     position: relative;
     top: 16px;
+    left: 0;
     line-height: 68px;
     padding: 0;
     margin-left: auto;

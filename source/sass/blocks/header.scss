@@ -190,6 +190,10 @@
 
 .header__catalog {
   margin-bottom: 30px;
+
+  @include desktop {
+    margin-bottom: 0;
+  }
 }
 
 
