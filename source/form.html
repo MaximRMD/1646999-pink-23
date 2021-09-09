@@ -126,11 +126,12 @@
   <main class="page-main">
     <div class="raffle-block">
       <p class="raffle-text">Поделитесь своей историей и получите шанс выиграть
-        ценный приз — 1000 миль на вашу бонусную карту!
-      <span class="raffle-text__tablet">Пожалуйста, заполните форму ниже:</span></p>
+        ценный приз — 1000 миль на вашу бонусную карту!&nbsp;
+        <span class="raffle-text__tablet">Пожалуйста, заполните форму ниже:</span>
+      </p>
     </div>
     <div class="form-wrapper">
-      <form class="write__form" method="POST">
+      <form class="write__form write__width" method="POST">
         <div class="write-paragraph container">
           <p class="item-paragraph">
             <label class="input-title" for="name">Фамилия:</label>
@@ -157,37 +158,37 @@
           <legend class="progress__title progress__title-fuul--width"> Ваши безбашенные достижения в путешествии
           </legend>
           <ul class="progress__checkbox">
-            <li class="progress__checkbox-item">
+            <li class="progress__checkbox-item progress__selfi">
               <input class="progress__checkbox-input" type="checkbox" name="Селфи" id="filter-selfie" checked>
               <label class="progress__point" for="filter-selfie"> <span class="progress__check-box"></span>
                 Сделал селфи с акулой</label>
             </li>
 
-            <li class="progress__checkbox-item">
+            <li class="progress__checkbox-item progress__beach">
               <input class="progress__checkbox-input" type="checkbox" name="обгорел на пляже" id="filter-beach" checked>
               <label class="progress__point" for="filter-beach"> <span class="progress__check-box"></span>
                 Обгорел на пляже</label>
             </li>
 
-            <li class="progress__checkbox-item">
+            <li class="progress__checkbox-item progress__chack">
               <input class="progress__checkbox-input" type="checkbox" name="Видел Чака Норриса" id="filter-chack">
               <label class="progress__point" for="filter-chack"> <span class="progress__check-box"></span>
                 Видел Чака Норриса</label>
             </li>
 
-            <li class="progress__checkbox-item">
+            <li class="progress__checkbox-item progress__souvenir">
               <input class="progress__checkbox-input" type="checkbox" name="Накупил сувениров" id="filter-souvenirs">
               <label class="progress__point" for="filter-souvenirs"> <span class="progress__check-box"></span>
                 Накупил сувениров</label>
             </li>
 
-            <li class="progress__checkbox-item">
+            <li class="progress__checkbox-item progress__tower">
               <input class="progress__checkbox-input" type="checkbox" name="Удержал башню" id="filter-tower" checked>
               <label class="progress__point" for="filter-tower"> <span class="progress__check-box"></span>
                 Удержал башню</label>
             </li>
 
-            <li class="progress__checkbox-item">
+            <li class="progress__checkbox-item progress__hotel">
               <input class="progress__checkbox-input" type="checkbox" name="Разгромил отель" id="filter-hotel">
               <label class="progress__point" for="filter-hotel"> <span class="progress__check-box"></span>
                 Разгромил отель</label>
@@ -201,12 +202,12 @@
           <fieldset class="write__item write__item-contact">
             <legend class="applications__title applications__title--phones">Контактная информация</legend>
             <p class="item-paragraph item-paragraph__contact">
-              <label class="input-title input-title__contact" for="phone">Номер телефона</label><br>
+              <label class="input-title input-title__contact" for="phone">Номер телефона</label>
               <input class="write__input write__input-contact" id="phone" type="text" name="phone"
                 placeholder="Номер, пожалуйста">
             </p>
             <p class="item-paragraph item-paragraph__contact">
-              <label class="input-title input-title__contact" for="email">Адрес почты</label><br>
+              <label class="input-title input-title__contact" for="email">Адрес почты</label>
               <input class="write__input write__input-contact" id="email" type="email" name="email"
                 placeholder="Введите почту *">
             </p>
@@ -259,7 +260,8 @@
       <div class="emotions__block--tablet">
         <button class="emotions__block-tablet--button-send button__green" type="submit">Отправить форму</button>
         <div class="emotions__block-tablet--star-text">
-          <span class="emotions__star--text">*</span> — обязательные поля
+          <span class="emotions__star--text">*</span> <span class="emotions__text-main">— обязательные поля</span>
+          <span class="emotions__text-desktop">— обязательные для заполнения поля</span>
         </div>
       </div>
 

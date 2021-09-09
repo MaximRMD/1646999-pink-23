@@ -24,6 +24,7 @@
   font-weight: 700;
 
   @include tablets {
+    max-width: 296px;
     line-height: 36px;
     margin: 0;
     margin-top: 42px;
@@ -31,6 +32,7 @@
   }
 
   @include desktop {
+    max-width: 298px;
     margin: 0;
     margin-top: 56px;
     margin-bottom: 21px;

@@ -9,8 +9,8 @@
   }
 
   @include desktop {
-    margin-bottom: 64px;
-    order: 1;
+    margin-bottom: 0;
+    order: -2;
   }
 
   &.container {
@@ -19,6 +19,7 @@
       max-width: 431px;
       padding: 0;
       margin-left: 74px;
+      margin-right: 0;
     }
   }
 }
@@ -32,7 +33,7 @@
   text-align: center;
   color: $pink;
   margin-bottom: 33px;
-  padding-top: 20px;
+  padding-top: 39px;
 
   @include tablets {
     background-color: $white;

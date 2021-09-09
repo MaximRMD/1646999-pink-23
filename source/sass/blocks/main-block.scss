@@ -1,9 +1,5 @@
 .main-block {
   border-bottom: 1px solid transparent;
-
-  @include desktop {
-
-  }
 }
 
 .main-block__form {
@@ -29,7 +25,6 @@
 
   @include desktop {
     max-width: 747px;
-    padding-top: 74px;
-    margin-bottom: 104px;
+    margin-bottom: 88px;
   }
 }

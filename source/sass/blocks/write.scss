@@ -28,7 +28,7 @@
 }
 
 .write__form {
-  margin-bottom: 44px;
+  margin-bottom: 25px;
   order: -1;
 
   @include tablets {
@@ -37,7 +37,14 @@
   }
 
   @include desktop {
-    margin-bottom: 64px;
+    margin-bottom: 47px;
+  }
+}
+
+.write__width {
+  @include desktop {
+    width: 36%;
+    padding-top: 16px;
   }
 }
 
@@ -56,15 +63,14 @@
   }
 }
 
-.item-paragraph__contact:nth-last-of-type(1) {
-  margin-bottom: 4px;
-}
-
 .write__item-contact {
-  margin-bottom: 57px;
+  margin-bottom: 23px;
 
   @include tablets {
     margin-bottom: 61px;
   }
 
+  @include desktop {
+    margin-bottom: 59px;
+  }
 }

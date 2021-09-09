@@ -20,6 +20,7 @@
 
   @include desktop {
     max-width: 756px;
+    margin-bottom: 65px;
   }
 }
 
@@ -28,5 +29,9 @@
 
   @include tablets {
     display: block;
+  }
+
+  @include desktop {
+    display: inline;
   }
 }

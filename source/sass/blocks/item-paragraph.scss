@@ -13,7 +13,7 @@
   }
 
   @include desktop {
-    margin-bottom: 58px;
+    margin-bottom: 46px;
   }
 }
 
@@ -23,12 +23,27 @@
   }
 }
 
+.item-paragraph__contact:nth-last-of-type(1) {
+  @include tablets {
+    margin-bottom: 27px;
+  }
+
+  @include desktop {
+    margin-bottom: 0;
+  }
+}
 
 .item-paragraph__contact {
   @include tablets {
     max-width: 500px;
     flex-direction: column;
     align-items: flex-start;
-    margin-bottom: 8px;
+    margin-bottom: 30px;
+    margin-left: 58px;
+    margin-right: 35px;
+  }
+
+  @include desktop {
+    margin-bottom: 11px;
   }
 }

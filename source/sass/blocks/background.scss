@@ -7,7 +7,7 @@
 
   @include tablets {
     display: flex;
-    padding: 56px 20px 47px 20px;
+    padding: 56px 32px 47px 20px;
     justify-content: space-between;
   }
 
@@ -15,7 +15,8 @@
     max-width: 940px;
     margin-left: auto;
     margin-right: auto;
-    padding: 57px 61px 51px 79px;
+    padding: 57px 61px 32px 79px;
+    margin-bottom: 98px;
   }
 }
 
@@ -58,13 +59,15 @@
 
   @include tablets {
     padding: 0;
-    padding-bottom: 41px;
+    padding-bottom: 25px;
+    margin-bottom: 17px;
     padding-top: 9px;
   }
 
   @include desktop {
     padding: 0;
-    margin-bottom: 26px;
+    margin-bottom: 15px;
+    padding-bottom: 11px;
 
     &::after {
       content: "";
@@ -76,8 +79,6 @@
     }
   }
 }
-
-
 
 .background__editor--tablet-item:nth-last-of-type(1) {
   padding-top: 6px;
@@ -117,8 +118,14 @@
   background-color: transparent;
   appearance: none;
 
+  @include tablets {
+    min-width: 202px;
+    margin-right: 6px;
+  }
+
   @include desktop {
     min-width: 288px;
+    margin-right: 29px;
   }
 
   &:focus {
@@ -258,6 +265,7 @@
     flex-direction: column;
     justify-content: space-between;
     margin: 0;
+    gap: 69px;
   }
 }
 
@@ -284,7 +292,7 @@
 .background__svg-fill {
   @include tablets {
     height: 22px;
-    width: 24px;
+    width: 22px;
   }
 
   @include desktop {
@@ -296,15 +304,19 @@
 .background__svg-contrast {
   @include tablets {
     height: 16px;
-    width: 16px;
+    width: 22px;
   }
 
   @include desktop {
     height: 32px;
-    width: 32px;
+    width: 44px;
   }
 }
 
 .background__editor-tablet-icon {
   margin-bottom: 56px;
+
+  @include tablets {
+    margin-bottom: 70px;
+  }
 }

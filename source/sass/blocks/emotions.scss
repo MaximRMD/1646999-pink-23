@@ -37,6 +37,10 @@
     align-items: baseline;
     margin-bottom: 43px;
   }
+
+  @include desktop {
+    margin-bottom: 28px;
+  }
 }
 
 /*.emotions-paragraph {
@@ -71,7 +75,12 @@
   }
 
   @include desktop {
+    min-height: 125px;
     width: 816px;
+    padding-left: 18px;
+    padding-top: 10px;
+    text-align: start;
+    margin-bottom: 42px;
   }
 }
 
@@ -86,5 +95,24 @@
     margin-bottom: 0;
     padding-left: 55px;
     padding-right: 55px;
+  }
+}
+
+
+.emotions__text-main {
+  @include desktop {
+    display: none;
+  }
+}
+
+.emotions__text-desktop {
+  display: none;
+
+  @include tablets {
+    display: none;
+  }
+
+  @include desktop {
+    display: block;
   }
 }
