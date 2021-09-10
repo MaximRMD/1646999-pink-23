@@ -27,7 +27,7 @@
   left: 0;
 
   @include tablets {
-    clip-path: polygon(0 0, 100% 0, 0 8%);
+    clip-path: polygon(0 0, 100% 0, 0 11%);
   }
 
   @include desktop {
@@ -195,6 +195,7 @@
 
   @include desktop {
     min-height: 60px;
+    padding-left: 17px;
   }
 }
 
@@ -212,8 +213,11 @@
   }
 
   @include desktop {
-    margin-top: 34px;
+    width: 978px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 100px;
+    margin-top: 34px;
   }
 }
 

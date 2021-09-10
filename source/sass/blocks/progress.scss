@@ -98,7 +98,7 @@
   }
 }
 
-.progress__checkbox-input:checked+label .progress__check-box {
+.progress__checkbox-input:checked + label .progress__check-box {
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
 }
@@ -135,7 +135,6 @@
   @include desktop {
     order: 5;
   }
-
 }
 
 .progress__chack {
