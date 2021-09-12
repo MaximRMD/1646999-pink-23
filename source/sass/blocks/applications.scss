@@ -56,4 +56,8 @@
     margin-bottom: 29px;
     display: block;
   }
+
+  @include desktop {
+    margin-bottom: 27px;
+  }
 }

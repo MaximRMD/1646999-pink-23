@@ -63,9 +63,10 @@
   font-size: 18px;
   line-height: 30px;
   color: $extra-light-black;
-  text-align: center;
+  text-align: left;
   margin-bottom: 49px;
   padding-top: 14px;
+  padding-left: 20px;
 
   @include tablets {
     min-height: 193px;

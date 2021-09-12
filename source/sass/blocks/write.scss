@@ -1,4 +1,4 @@
-.write {
+.write__form {
   order: -1;
 }
 
@@ -27,7 +27,7 @@
   }
 }
 
-.write__form {
+.write {
   margin-bottom: 25px;
   order: -1;
 
@@ -57,20 +57,26 @@
 .write__input-contact {
   @include tablets {
     padding-top: 15px;
-    margin-bottom: 9px;
+    margin-bottom: 11px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  @include desktop {
+    margin-bottom: 8px;
   }
 }
 
 .write__item-contact {
-  margin-bottom: 23px;
+  margin-bottom: 25px;
 
   @include tablets {
-    margin-bottom: 61px;
+    margin-bottom: 60px;
   }
 
   @include desktop {
-    margin-bottom: 59px;
+    margin-bottom: 62px;
+    padding: 0 57px;
+    gap: 71px;
   }
 }

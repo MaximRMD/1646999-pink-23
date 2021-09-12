@@ -130,9 +130,9 @@
         <span class="raffle-text__tablet">Пожалуйста, заполните форму ниже:</span>
       </p>
     </div>
-    <div class="form-wrapper">
-      <form class="write__form write__width" method="POST">
-        <div class="write-paragraph container">
+    <form class="form-wrapper">
+      <div class="write write__width" method="POST">
+        <div class="write__paragraph container">
           <p class="item-paragraph">
             <label class="input-title" for="name">Фамилия:</label>
             <input class="write__input write-input-name" id="name" type="text" name="name"
@@ -151,7 +151,7 @@
               placeholder="Ну и отчество тоже">
           </p>
         </div>
-      </form>
+      </div>
 
       <div class="progress container">
         <fieldset class="progress__block filter">
@@ -197,22 +197,22 @@
         </fieldset>
       </div>
 
-      <div class="write container">
-        <form class="write__form" method="POST">
+      <div class="write__form container">
+        <div class="write__form" method="POST">
           <fieldset class="write__item write__item-contact">
             <legend class="applications__title applications__title--phones">Контактная информация</legend>
-            <p class="item-paragraph item-paragraph__contact">
+            <p class="item-paragraph item-paragraph--type-tel  item-paragraph__contact">
               <label class="input-title input-title__contact" for="phone">Номер телефона</label>
               <input class="write__input write__input-contact" id="phone" type="text" name="phone"
                 placeholder="Номер, пожалуйста">
             </p>
-            <p class="item-paragraph item-paragraph__contact">
+            <p class="item-paragraph item-paragraph--type-email item-paragraph__contact">
               <label class="input-title input-title__contact" for="email">Адрес почты</label>
               <input class="write__input write__input-contact" id="email" type="email" name="email"
                 placeholder="Введите почту *">
             </p>
           </fieldset>
-        </form>
+        </div>
 
       </div>
 
@@ -247,7 +247,7 @@
           </ul>
         </fieldset>
       </div>
-    </div>
+    </form>
 
 
     <div class="container">
@@ -339,7 +339,7 @@
   <script src="https://api-maps.yandex.ru/2.1/?apikey=1bf215ba-9474-4f2f-aafe-705892ec1e59&lang=ru_RU"
     type="text/javascript"></script>
   <script src="./js/map.js"></script>
-  <script src="./js/modal.js"></script>
+ <script src="./js/modal.js"></script>
 </body>
 
 </html>
