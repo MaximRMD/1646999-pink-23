@@ -18,3 +18,20 @@
     max-width: 100%;
   }
 }
+
+.header-block__phone-image {
+  position: relative;
+  top: 5px;
+
+  @include tablets {
+    position: absolute;
+    top: initial;
+    bottom: 0;
+  }
+
+  @include desktop {
+    max-width: initial;
+    right: 4px;
+    bottom: -130px;
+  }
+}

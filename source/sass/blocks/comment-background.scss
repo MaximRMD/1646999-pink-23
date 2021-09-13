@@ -15,7 +15,7 @@
   }
 }
 
-.comment-background__anna {
+.comment-background--anna {
   margin-bottom: 20px;
 
   @include tablets {
@@ -105,7 +105,7 @@
   }
 }
 
-.comment-background__anna-like {
+.comment-background--anna-like {
   @include tablets {
     flex-direction: row-reverse;
     column-gap: 15px;

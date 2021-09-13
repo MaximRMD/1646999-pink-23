@@ -19,7 +19,7 @@ buttonFormSubmit.addEventListener('click', ()=> {
 
 document.addEventListener('click', (e)=> {
   const target = e.target;
-  if(target.classList.contains('button__green--close')){
+  if(target.classList.contains('button-green--close')){
     closeModal();
   }
 })

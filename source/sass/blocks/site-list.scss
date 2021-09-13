@@ -21,6 +21,7 @@
 
   &:last-child {
     border-bottom: 1px solid $black;
+    margin-right: 0;
 
     @include desktop {
       border-bottom: none;
@@ -32,8 +33,10 @@
     margin-right: 78px;
   }
 
-  &:last-child {
-    margin-right: 0;
+  &--active {
+    @include desktop {
+      border-bottom: 2px solid $white;
+    }
   }
 }
 

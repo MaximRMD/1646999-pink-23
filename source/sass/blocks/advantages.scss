@@ -196,3 +196,29 @@
 .advantages__item {
   flex: 1;
 }
+
+.advantages__smile-pink--img {
+  @include tablets {
+    max-width: initial;
+    position: relative;
+    bottom: 178px;
+    right: 111px;
+  }
+}
+
+.advantages__smile-phone-pink {
+  width: 157px;
+  height: 320px;
+  padding: 0;
+  position: relative;
+  top: 43px;
+
+  @include tablets {
+    order: -1;
+    margin-right: 42px;
+  }
+
+  @include desktop {
+    display: none;
+  }
+}

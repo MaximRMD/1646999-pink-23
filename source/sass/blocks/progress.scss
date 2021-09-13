@@ -7,33 +7,25 @@
   flex-direction: column;
 
   @include desktop {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    flex-direction: row;
+    display: grid;
+    column-gap: 53px;
+    grid-template-columns: 260px 242px 210px;
+    padding: 0 60px;
   }
 }
 
 .progress {
   background-color: $grey;
   margin-bottom: 26px;
-  order: -1;
 
   @include tablets {
     background-color: $white;
     margin-bottom: 53px;
-    order: 1;
+    order: initial;
   }
 
   @include desktop {
     margin-bottom: 52px;
-    order: 3;
-  }
-}
-
-.write-block {
-  @include desktop {
-    order: 2;
   }
 }
 

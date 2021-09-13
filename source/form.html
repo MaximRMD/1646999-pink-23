@@ -12,9 +12,9 @@
   <link rel="icon" href="/img/favicon32.svg" type="image/svg+xml">
 </head>
 
-<body class="page__body">
+<body class="page-body">
   <header class="header">
-    <div class="header-block header__home-page header__home-page--form">
+    <div class="header-block header--home-page header--home-page-form">
       <div class="header__top header__top_close header__top_nojs">
         <!--header__top-close!-->
         <div class="header__top-wrapper container">
@@ -91,7 +91,7 @@
           <nav class="main-nav">
             <div class="main-nav__wrapper">
               <ul class="main-nav__list site-list">
-                <li class="site-list__item site-list__item--active">
+                <li class="site-list__item">
                   <a class="site-list__link" href="index.html">
                     Главная
                   </a>
@@ -101,7 +101,7 @@
                     Фотографии
                   </a>
                 </li>
-                <li class="site-list__item">
+                <li class="site-list__item site-list__item--active">
                   <a class="site-list__link" href="form.html">
                     Конкурс
                   </a>
@@ -130,30 +130,30 @@
         <span class="raffle-text__tablet">Пожалуйста, заполните форму ниже:</span>
       </p>
     </div>
-    <form class="form-wrapper">
-      <div class="write write__width" method="POST">
-        <div class="write__paragraph container">
+    <form class="form-wrapper applications">
+      <div class="write-form write-form--width" method="POST">
+        <div class="write-form__paragraph container">
           <p class="item-paragraph">
             <label class="input-title" for="name">Фамилия:</label>
-            <input class="write__input write-input-name" id="name" type="text" name="name"
+            <input class="write-form__input write-input-name" id="name" type="text" name="name"
               placeholder="Укажите фамилию *">
           </p>
 
           <p class="item-paragraph">
             <label class="input-title" for="name">Имя:</label>
-            <input class="write__input write-input-name" id="name" type="text" name="name"
+            <input class="write-form__input write-input-name" id="name" type="text" name="name"
               placeholder="Введите ваше имя *">
           </p>
 
           <p class="item-paragraph">
             <label class="input-title" for="name">Отчество:</label>
-            <input class="write__input write-input-name" id="name" type="text" name="name"
+            <input class="write-form__input write-input-name" id="name" type="text" name="name"
               placeholder="Ну и отчество тоже">
           </p>
         </div>
       </div>
 
-      <div class="progress container">
+      <div class="write-form write-form--type--progress progress container">
         <fieldset class="progress__block filter">
           <legend class="progress__title progress__title-fuul--width"> Ваши безбашенные достижения в путешествии
           </legend>
@@ -197,75 +197,73 @@
         </fieldset>
       </div>
 
-      <div class="write__form container">
-        <div class="write__form" method="POST">
-          <fieldset class="write__item write__item-contact">
-            <legend class="applications__title applications__title--phones">Контактная информация</legend>
-            <p class="item-paragraph item-paragraph--type-tel  item-paragraph__contact">
-              <label class="input-title input-title__contact" for="phone">Номер телефона</label>
-              <input class="write__input write__input-contact" id="phone" type="text" name="phone"
-                placeholder="Номер, пожалуйста">
-            </p>
-            <p class="item-paragraph item-paragraph--type-email item-paragraph__contact">
-              <label class="input-title input-title__contact" for="email">Адрес почты</label>
-              <input class="write__input write__input-contact" id="email" type="email" name="email"
-                placeholder="Введите почту *">
-            </p>
-          </fieldset>
-        </div>
-
+      <div class="write-form container" method="POST">
+        <fieldset class="write-form__item write-form__item-contact">
+          <legend class="applications__title applications__title--phones">Контактная информация</legend>
+          <p class="item-paragraph item-paragraph--type-tel  item-paragraph--type--contact">
+            <label class="input-title input-title--type--contact" for="phone">Номер телефона</label>
+            <input class="write-form__input write-form__input-contact" id="phone" type="text" name="phone"
+              placeholder="Номер, пожалуйста">
+          </p>
+          <p class="item-paragraph item-paragraph--type-email item-paragraph--type--contact">
+            <label class="input-title input-title--type--contact" for="email">Адрес почты</label>
+            <input class="write-form__input write-form__input-contact" id="email" type="email" name="email"
+              placeholder="Введите почту *">
+          </p>
+        </fieldset>
       </div>
 
-      <div class="applications__block container">
+      <div class="write-form write-form--type--applications applications__block container">
         <fieldset class="applications-os filter">
           <legend class="applications__title">С каким приложением
             путешествовали?</legend>
 
           <ul class="radio">
-            <li class="radio-item">
-              <input class="radio-input" type="radio" name="grid" id="filter-ios" checked>
+            <li class="radio__item">
+              <input class="radio__input" type="radio" name="grid" id="filter-ios" checked>
 
-              <label class="point" for="filter-ios">
-                <span class="custom-radio"></span>
+              <label class="radio__point" for="filter-ios">
+                <span class="radio__custom"></span>
                 Pink для iOS</label>
             </li>
 
-            <li class="radio-item">
-              <input class="radio-input" type="radio" name="grid" id="filter-android">
+            <li class="radio__item">
+              <input class="radio__input" type="radio" name="grid" id="filter-android">
 
-              <label class="point" for="filter-android">
-                <span class="custom-radio"></span>
+              <label class="radio__point" for="filter-android">
+                <span class="radio__custom"></span>
                 Pink на Android</label>
             </li>
 
-            <li class="radio-item">
-              <input class="radio-input" type="radio" name="grid" id="filter-windows">
-              <label class="point" for="filter-windows">
-                <span class="custom-radio"></span>
+            <li class="radio__item">
+              <input class="radio__input" type="radio" name="grid" id="filter-windows">
+              <label class="radio__point" for="filter-windows">
+                <span class="radio__custom"></span>
                 Windows Phone</label>
             </li>
           </ul>
         </fieldset>
       </div>
+      <div class="write-form write-form--type--emotions container emotions">
+        <fieldset class="emotions__wrap">
+          <legend class="emotions__title applications__title">Опишите свои эмоции</legend>
+          <label class="emotions__label" for="text"></label>
+          <textarea class="emotions__text" name="text" id="text"
+            placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </fieldset>
+        <div class="emotions__block--tablet">
+          <button class="emotions__block-tablet--button-send button-green" type="submit">Отправить форму</button>
+          <div class="emotions__block-tablet--star-text">
+            <span class="emotions__star--text">*</span> <span class="emotions__text-main">— обязательные поля</span>
+            <span class="emotions__text-desktop">— обязательные для заполнения поля</span>
+          </div>
+        </div>
+
+      </div>
     </form>
 
 
-    <div class="container">
-      <fieldset class="emotions">
-        <legend class="emotions__title applications__title ">Опишите свои эмоции</legend>
-        <label class="emotions__label" for="text"></label>
-        <textarea class="emotions__text" name="text" id="text"
-          placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-      </fieldset>
-      <div class="emotions__block--tablet">
-        <button class="emotions__block-tablet--button-send button__green" type="submit">Отправить форму</button>
-        <div class="emotions__block-tablet--star-text">
-          <span class="emotions__star--text">*</span> <span class="emotions__text-main">— обязательные поля</span>
-          <span class="emotions__text-desktop">— обязательные для заполнения поля</span>
-        </div>
-      </div>
 
-    </div>
 
   </main>
   <footer class="footer">
@@ -320,7 +318,7 @@
       <p class="modal__tablet-subtitle">Проверьте поля, выделенные
         красным, скорее всего вы забыли
         их заполнить</p>
-      <button class="modal__tablet-button button__green button__green--close" type="submit">Ok</button>
+      <button class="modal__tablet-button button-green button-green--close" type="submit">Ok</button>
     </div>
   </div>
 
@@ -332,14 +330,14 @@
         заявка уже поступила к нам. В
         ближайшее время мы рассмотрим
         ее и оповестим вас.</p>
-      <button class="modal__tablet-button button__green button__green--close" type="submit">Закрыть окно</button>
+      <button class="modal__tablet-button button-green button-green--close" type="submit">Закрыть окно</button>
     </div>
   </div>
   <script src="./js/menu.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=1bf215ba-9474-4f2f-aafe-705892ec1e59&lang=ru_RU"
     type="text/javascript"></script>
   <script src="./js/map.js"></script>
- <script src="./js/modal.js"></script>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>

@@ -1,4 +1,4 @@
-.contacts__map {
+.contacts {
   margin-bottom: 40px;
   position: relative;
   background-color: $grey;
@@ -32,7 +32,7 @@
   }
 }
 
-.contacts__map::before {
+.contacts::before {
   content: "";
   background: $white;
   width: 100%;

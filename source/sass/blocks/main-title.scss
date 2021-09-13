@@ -20,7 +20,7 @@
   }
 }
 
-.main-title__catalog {
+.main-title--catalog {
   margin-bottom: 76px;
 
   @include tablets {
@@ -35,7 +35,7 @@
   }
 }
 
-.main-title__index {
+.main-title--index {
   @include tablets {
     font-size: 40px;
     min-width: 238px;

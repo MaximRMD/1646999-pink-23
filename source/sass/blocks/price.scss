@@ -108,15 +108,23 @@
   }
 
   &_icon_hit::before {
-    content: attr(title);
-    color: $white;
+    content: "";
     position: absolute;
-    left: 0;
+    left: 20px;
     top: 0;
-    background-color: $pink;
-    text-transform: uppercase;
-    font-size: 14px;
-    line-height: 30px;
+    background-image: url("../img/hit.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 74px;
+    height: 74px;
+
+    @include desktop {
+      left: 2px;
+      top: 1px;
+      width: 78px;
+      height: 68px;
+      background-image: url("../img/hit_desktop.svg");
+    }
   }
 }
 

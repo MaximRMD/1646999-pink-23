@@ -12,8 +12,8 @@
   <link rel="icon" href="/img/favicon32.svg" type="image/svg+xml">
 </head>
 
-<body class="page__body">
-  <header class="header header__home-page header__home-margin">
+<body class="page-body">
+  <header class="header header--home-page header--home-margin">
     <div class="header__top header__index-margin header__top_close header__top_nojs">
       <!--header__top-close!-->
       <div class="header__top-wrapper container">
@@ -118,14 +118,14 @@
     <section class="header-block">
       <div class="header-block__grid">
         <div class="header-block__wrap">
-          <p class="header-block__title main-title main-title__index"> Взгляните на жизнь иначе!</p>
+          <p class="header-block__title main-title main-title--index"> Взгляните на жизнь иначе!</p>
           <picture>
             <source srcset="./img/phone-desctop@1x.png 1x, ./img/phone-desctop@2x.png 2x" type="image/png"
               media="(min-width: 1200px)">
             <source srcset="./img/phone-tablets@1x.png 1x, ./img/phone-tablets@2x.png 2x" type="image/png"
               media="(min-width: 660px)">
             <source srcset="./img/phone@1x.png 1x, ./img/phone@2x.png 2x" type="image/png" media="(min-width: 320px)">
-            <img src="./img/phone.png" class="phone__image" alt="">
+            <img src="./img/phone.png" class="header-block__phone-image" alt="">
           </picture>
         </div>
         <div class="download-aplication container">
@@ -195,7 +195,7 @@
               </picture>
               <h3 class="advantages__title title">Меняет мир вокруг</h3>
               <p class="advantages__subtitle">Сделайте снимок&nbsp;и украсьте его смайликом или текстовой подписью,
-                чтобы усилить эффект</p>
+                чтобы усилить&nbsp;эффект</p>
             </li>
 
             <li class="advantages__item">
@@ -210,18 +210,18 @@
                 друзьями и заводите новых</p>
             </li>
           </ul>
-          <div class="phone__smile-pink">
+          <div class="advantages__smile-phone-pink">
             <picture>
               <source srcset="./img/phone-pink-tablets@x1.png 1x, ./img/phone-pink-tablets@2x.png 2x" type="image/png"
                 media="(min-width: 660px)">
               <source srcset="./img/phone-pink@1x.png 1x, ./img/phone-pink@2x.png 2x" type="image/png"
                 media="(min-width: 320px)">
-              <img class="phone__smile-pink--img" alt="телефон" src="./img/phone-pink.png">
+              <img class="advantages__smile-pink--img" alt="телефон" src="./img/phone-pink.png">
             </picture>
           </div>
         </div>
       </div>
-      <div class="effect__background">
+      <div class="effect">
         <div class="effect__block container">
           <svg class="effect__svg--24hors-desktop" width="298" height="345" viewBox="0 0 238 276" fill="none"
             xmlns="http://www.w3.org/2000/svg">
@@ -413,7 +413,7 @@
           </div>
         </li>
       </ul>
-      <div class="slide-toggles slide-toggles__low">
+      <div class="slide-toggles slide-toggles--low">
         <button class="slide-toggles__button"></button>
         <button class="slide-toggles__button slide-toggles__button_selected"></button>
         <button class="slide-toggles__button"></button>
@@ -450,7 +450,7 @@
           </div>
         </div>
       </div>
-      <div id="map" class="contacts__map">
+      <div id="map" class="contacts">
       </div>
     </section>
   </main>

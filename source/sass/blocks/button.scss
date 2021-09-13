@@ -44,7 +44,7 @@
   }
 }
 
-.button__post {
+.button--post {
   font-family: "Open sans", "Arial", sans-serif;
   cursor: pointer;
   transition: 0.25s;
@@ -88,38 +88,4 @@
     background-color: $pink;
     color: rgba(255, 255, 255, 0.3);
   }
-}
-
-.button__green {
-  background: $green;
-  border-radius: 4px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 30px;
-  color: $white;
-  border: none;
-  transition: 0.25s;
-  text-transform: uppercase;
-  cursor: pointer;
-  max-width: 296px;
-  padding: 17px 48px 16px 48px;
-
-  @include tablets {
-    padding-left: 57px;
-    padding-right: 55px;
-    min-width: 300px;
-  }
-
-  &:hover {
-    background-color: $green-dark;
-  }
-
-  &:active {
-    color: rgba(255, 255, 255, 0.3);
-  }
-}
-
-.button__green--close {
-  padding-right: 75px;
-  padding-left: 75px;
 }

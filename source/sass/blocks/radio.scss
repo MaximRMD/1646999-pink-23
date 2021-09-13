@@ -6,3 +6,84 @@
     margin-bottom: 53px;
   }
 }
+
+.radio__item {
+  list-style: none;
+
+  @include tablets {
+    margin-left: 57px;
+  }
+
+  @include desktop {
+    margin-left: 70px;
+  }
+}
+
+.radio__custom {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  width: 41px;
+  height: 41px;
+  background: $white;
+  border: 2px solid $light-grey;
+  border-radius: 50%;
+  vertical-align: text-top;
+  margin-right: 29px;
+  transition: 0.25s;
+
+  @include tablets {
+    margin-right: 21px;
+  }
+
+  &:hover {
+    border-color: $extra-light-black;
+  }
+
+  &:active {
+    border-color: $pink;
+  }
+}
+
+.radio__input {
+  padding-left: 0;
+  position: absolute;
+  appearance: none;
+}
+
+.radio__custom::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: $pink;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 0.2s ease-in;
+  vertical-align: middle;
+}
+
+.radio__input:checked + label .radio__custom::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.radio__input:focus + label .radio__custom {
+  opacity: 1;
+}
+
+.radio__input:disabled + label {
+  opacity: 0.2;
+}
+.radio__point {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: $extra-light-black;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 34px;
+}

@@ -23,7 +23,7 @@
   }
 }
 
-.item-paragraph__contact {
+.item-paragraph--type--contact {
   @include tablets {
     position: relative;
     max-width: 500px;
@@ -41,7 +41,7 @@
   }
 }
 
-.item-paragraph__contact::before {
+.item-paragraph--type--contact::before {
   display: none;
 
   @include tablets {

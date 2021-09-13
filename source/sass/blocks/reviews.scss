@@ -61,8 +61,6 @@
 }
 
 .reviews__svg {
-
-
   @include phones {
     display: none;
   }
@@ -77,6 +75,7 @@
     opacity: 0.3;
     transition: 0.25s;
     display: block;
+    margin-bottom: 22px;
 
     &:hover {
       fill: $extra-light-black;

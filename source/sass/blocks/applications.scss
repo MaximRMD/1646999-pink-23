@@ -5,12 +5,10 @@
   @include tablets {
     background-color: $white;
     margin-bottom: 53px;
-    order: -2;
   }
 
   @include desktop {
     margin-bottom: 0;
-    order: -2;
   }
 
   &.container {
