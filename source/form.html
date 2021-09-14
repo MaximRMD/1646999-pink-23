@@ -14,7 +14,7 @@
 
 <body class="page-body">
   <header class="header">
-    <div class="header-block header--home-page header--home-page-form">
+    <div class="header-block header-block--home-page header-block--home-page-form">
       <div class="header__top header__top_close header__top_nojs">
         <!--header__top-close!-->
         <div class="header__top-wrapper container">
@@ -130,12 +130,12 @@
         <span class="raffle-text__tablet">Пожалуйста, заполните форму ниже:</span>
       </p>
     </div>
-    <form class="form-wrapper applications">
-      <div class="write-form write-form--width" method="POST">
+    <form class="form-wrapper applications" method="POST">
+      <div class="write-form write-form--width">
         <div class="write-form__paragraph container">
           <p class="item-paragraph">
-            <label class="input-title" for="name">Фамилия:</label>
-            <input class="write-form__input write-input-name" id="name" type="text" name="name"
+            <label class="input-title" for="surname">Фамилия:</label>
+            <input class="write-form__input write-input-name" id="surname" type="text" name="surname"
               placeholder="Укажите фамилию *">
           </p>
 
@@ -146,8 +146,8 @@
           </p>
 
           <p class="item-paragraph">
-            <label class="input-title" for="name">Отчество:</label>
-            <input class="write-form__input write-input-name" id="name" type="text" name="name"
+            <label class="input-title" for="patronymic">Отчество:</label>
+            <input class="write-form__input write-input-name" id="patronymic" type="text" name="patronymic"
               placeholder="Ну и отчество тоже">
           </p>
         </div>
@@ -155,7 +155,7 @@
 
       <div class="write-form write-form--type--progress progress container">
         <fieldset class="progress__block filter">
-          <legend class="progress__title progress__title-fuul--width"> Ваши безбашенные достижения в путешествии
+          <legend class="progress__title progress__title-fuul-width"> Ваши безбашенные достижения в путешествии
           </legend>
           <ul class="progress__checkbox">
             <li class="progress__checkbox-item progress__selfi">
@@ -197,7 +197,7 @@
         </fieldset>
       </div>
 
-      <div class="write-form container" method="POST">
+      <div class="write-form container">
         <fieldset class="write-form__item write-form__item-contact">
           <legend class="applications__title applications__title--phones">Контактная информация</legend>
           <p class="item-paragraph item-paragraph--type-tel  item-paragraph--type--contact">
@@ -251,19 +251,15 @@
           <textarea class="emotions__text" name="text" id="text"
             placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
-        <div class="emotions__block--tablet">
-          <button class="emotions__block-tablet--button-send button-green" type="submit">Отправить форму</button>
-          <div class="emotions__block-tablet--star-text">
-            <span class="emotions__star--text">*</span> <span class="emotions__text-main">— обязательные поля</span>
+        <div class="emotions__block-tablet">
+          <button class="emotions__block-tablet-button-send button-green" type="submit">Отправить форму</button>
+          <div class="emotions__block-tablet-star-text">
+            <span class="emotions__star-text">*</span> <span class="emotions__text-main">— обязательные поля</span>
             <span class="emotions__text-desktop">— обязательные для заполнения поля</span>
           </div>
         </div>
-
       </div>
     </form>
-
-
-
 
   </main>
   <footer class="footer">

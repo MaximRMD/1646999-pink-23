@@ -105,7 +105,7 @@
   }
 }
 
-.comment-background--anna-like {
+.comment-background__name-like--anna-like {
   @include tablets {
     flex-direction: row-reverse;
     column-gap: 15px;

@@ -118,6 +118,12 @@
     width: 74px;
     height: 74px;
 
+    @include tablets {
+      left: 0;
+      width: 78px;
+      height: 60px;
+    }
+
     @include desktop {
       left: 2px;
       top: 1px;

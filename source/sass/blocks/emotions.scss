@@ -20,18 +20,18 @@
   }
 }
 
-.emotions__star--text {
+.emotions__star-text {
   color: $pink;
 }
 
-.emotions__block-tablet--star-text {
+.emotions__block-tablet-star-text {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-bottom: 61px;
 }
 
-.emotions__block--tablet {
+.emotions__block-tablet {
   @include tablets {
     display: flex;
     align-items: baseline;
@@ -85,7 +85,7 @@
   }
 }
 
-.emotions__block-tablet--button-send {
+.emotions__block-tablet-button-send {
   margin-bottom: 37px;
   margin-left: auto;
   margin-right: auto;

@@ -1,4 +1,4 @@
-const buttonFormSubmit = document.querySelector('.emotions__block-tablet--button-send');
+const buttonFormSubmit = document.querySelector('.emotions__block-tablet-button-send');
 const modalSucsess = document.querySelector('.modal_type_sucsess');
 const modaErorr = document.querySelector('.modal_type_error');
 
