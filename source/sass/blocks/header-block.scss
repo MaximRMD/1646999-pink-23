@@ -6,6 +6,10 @@
   @include desktop {
     max-width: 46%;
   }
+
+  @include desktop-fulhd-width {
+    max-width: 46%;
+  }
 }
 
 .header-block {
