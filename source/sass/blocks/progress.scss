@@ -105,6 +105,7 @@
   border-radius: 4px;
   background-color: $white;
   background-position: center;
+  flex-shrink: 0;
 
   &:hover {
     border-color: $black;

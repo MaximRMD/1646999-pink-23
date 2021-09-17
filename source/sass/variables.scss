@@ -20,17 +20,10 @@ $tablet-width: 660px;
 $desktop-width: 1200px;
 $mobile-width-only: 659px;
 $mobile-width: 320px;
-$desktop-fulhd-width: 1920px;
 
 //mobile mixin
 @mixin not-desktop {
   @media screen and (max-width: 1199px) {
-    @content;
-  }
-}
-
-@mixin desktop-fulhd-width {
-  @media screen and (min-width: $desktop-fulhd-width) {
     @content;
   }
 }

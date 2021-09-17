@@ -1,3 +1,9 @@
+.main-nav {
+  @include desktop {
+    margin-left: 50px;
+  }
+}
+
 .main-nav__toggle {
   cursor: pointer;
   border: none;

@@ -28,6 +28,10 @@
   background-position-x: 50%;
   background-position-y: 50%;
 
+  &:last-child {
+    margin-right: 0;
+  }
+
   @include desktop {
     height: 55px;
     width: 55px;
@@ -90,5 +94,4 @@
 
 .footer__item-social_you {
   background-image: url("../img/youtube.svg");
-  margin-right: 0;
 }

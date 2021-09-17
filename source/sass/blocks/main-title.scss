@@ -41,6 +41,7 @@
     min-width: 238px;
     position: relative;
     left: 5px;
+    z-index: 1;
   }
 
   @include desktop {

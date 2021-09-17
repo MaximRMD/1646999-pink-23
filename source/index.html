@@ -13,7 +13,7 @@
 </head>
 
 <body class="page-body">
-  <header class="header header-block header-block--home-page header--home-margin">
+  <header class="header header--bg-image header--middle-margin">
     <div class="header__top header__index-margin header__top_close header__top_nojs">
       <!--header__top-close!-->
       <div class="header__top-wrapper container">
@@ -120,10 +120,15 @@
         <div class="header-block__wrap">
           <p class="header-block__title main-title main-title--index"> Взгляните на жизнь иначе!</p>
           <picture>
+            <source srcset="./img/phone-desctop@1x.webp 1x, ./img/phone-desctop@2x.webp 2x" type="image/webp"
+              media="(min-width: 1200px)">
             <source srcset="./img/phone-desctop@1x.png 1x, ./img/phone-desctop@2x.png 2x" type="image/png"
               media="(min-width: 1200px)">
+            <source srcset="./img/phone-tablets@1x.webp 1x, ./img/phone-tablets@2x.webp 2x" type="image/webp"
+              media="(min-width: 660px)">
             <source srcset="./img/phone-tablets@1x.png 1x, ./img/phone-tablets@2x.png 2x" type="image/png"
               media="(min-width: 660px)">
+            <source srcset="./img/phone@1x.webp 1x, ./img/phone@2x.webp 2x" type="image/webp" media="(min-width: 320px)">
             <source srcset="./img/phone@1x.png 1x, ./img/phone@2x.png 2x" type="image/png" media="(min-width: 320px)">
             <img src="./img/phone.png" class="header-block__phone-image" alt="">
           </picture>
@@ -164,7 +169,6 @@
         </div>
       </div>
     </section>
-
   </header>
 
   <main class="page-main">
@@ -179,6 +183,8 @@
           <ul class="advantages__list">
             <li class="advantages__item">
               <picture>
+                <source srcset="./img/phone-grey-desktop@1x.webp 1x, ./img/phone-grey-desktop@2x.webp 2x" type="image/webp"
+                  media="(min-width: 1200px)">
                 <source srcset="./img/phone-grey-desktop@1x.png 1x, ./img/phone-grey-desktop@2x.png 2x" type="image/png"
                   media="(min-width: 1200px)">
                 <img src="./img/phone-grey-desktop@1x.png" class="advantages__illustration" alt="">
@@ -224,15 +230,16 @@
       </div>
       <div class="effect">
         <div class="effect__block container">
-          <svg class="effect__svg-24hors-desktop" width="298" height="345" viewBox="0 0 238 276" fill="none"
+          <svg class="effect__svg-24hors-desktop" width="298" height="345" fill="none"
             xmlns="http://www.w3.org/2000/svg">
-            <path
+            <use xlink:href="./img/icons/sprite.svg#24-time"></use>
+            <!-- <path
               d="M211.314 81.6277L215.587 77.3408C221.752 71.1663 222.878 62.1925 218.086 57.4017C213.294 52.6109 204.334 53.7227 198.176 59.8971L193.871 64.208C176.746 50.2779 156.074 41.4187 134.187 38.6304V30.9603H140.305C149.019 30.9603 156.151 23.994 156.151 15.4842C156.151 6.97427 149.019 0 140.305 0H97.7208C89.0075 0 81.8755 6.96627 81.8755 15.4842C81.8755 24.002 89.0075 30.9603 97.7208 30.9603H103.839V38.6304C77.6967 41.9933 53.4093 53.9522 34.7872 72.6308C16.1652 91.3093 4.26218 115.651 0.945904 141.835C-2.37038 168.02 3.08771 194.566 16.4638 217.309C29.8399 240.052 50.377 257.704 74.8528 267.496C99.3286 277.288 126.358 278.665 151.7 271.412C177.042 264.16 199.263 248.687 214.875 227.421C230.488 206.156 238.609 180.302 237.964 153.915C237.32 127.529 227.946 102.103 211.314 81.6277ZM119.013 244.947C101.61 244.947 84.5984 239.779 70.1286 230.097C55.6589 220.414 44.3813 206.652 37.7219 190.551C31.0625 174.45 29.3205 156.733 32.7162 139.64C36.1119 122.547 44.4927 106.847 56.7989 94.5241C69.105 82.2015 84.7837 73.81 101.852 70.411C118.921 67.012 136.613 68.7581 152.69 75.4285C168.768 82.0989 182.509 93.3939 192.176 107.885C201.844 122.377 207.003 139.413 207.001 156.841C206.999 180.209 197.728 202.619 181.227 219.142C164.726 235.665 142.348 244.947 119.013 244.947Z"
               fill="#DEDEDE" />
             <circle cx="119" cy="157" r="93" stroke="#D22856" stroke-width="16" />
             <path
               d="M115.906 191H68V180.922L85.2031 163.531C90.2969 158.312 93.625 154.703 95.1875 152.703C96.75 150.672 97.875 148.797 98.5625 147.078C99.25 145.359 99.5938 143.578 99.5938 141.734C99.5938 138.984 98.8281 136.938 97.2969 135.594C95.7969 134.25 93.7812 133.578 91.25 133.578C88.5938 133.578 86.0156 134.188 83.5156 135.406C81.0156 136.625 78.4062 138.359 75.6875 140.609L67.8125 131.281C71.1875 128.406 73.9844 126.375 76.2031 125.188C78.4219 124 80.8438 123.094 83.4688 122.469C86.0938 121.812 89.0312 121.484 92.2812 121.484C96.5625 121.484 100.344 122.266 103.625 123.828C106.906 125.391 109.453 127.578 111.266 130.391C113.078 133.203 113.984 136.422 113.984 140.047C113.984 143.203 113.422 146.172 112.297 148.953C111.203 151.703 109.484 154.531 107.141 157.438C104.828 160.344 100.734 164.484 94.8594 169.859L86.0469 178.156V178.812H115.906V191ZM172.297 176.797H164.047V191H149.891V176.797H120.641V166.719L150.688 122.469H164.047V165.547H172.297V176.797ZM149.891 165.547V153.922C149.891 151.984 149.969 149.172 150.125 145.484C150.281 141.797 150.406 139.656 150.5 139.062H150.125C148.969 141.625 147.578 144.125 145.953 146.562L133.391 165.547H149.891Z"
-              fill="#D22856" />
+              fill="#D22856" /> -->
           </svg>
           <svg class="effect__svg-24hors-tablets" width="238" height="276" viewBox="0 0 238 276" fill="none"
             xmlns="http://www.w3.org/2000/svg">
@@ -257,7 +264,7 @@
 
     <section class="reviews slider">
       <div class="reviews__colon">
-        <svg width="79" height="63" viewBox="0 0 79 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="79" height="63" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M35.1468 6.97257L30.8388 0C28.3886 1.48142 0 12.0588 0 39.1293C0 46.2698 0.341426 63 18.9793 63C30.2162 63 32.9778 52.8473 32.9778 49.5783C32.9778 27.8508 11.5081 35.5838 11.5081 35.5838C11.5081 17.7771 31.3911 9.06631 35.1468 6.97257Z"
             fill="#EFEFEF" />
@@ -356,6 +363,7 @@
             <div class="price__name">Розовый фильтр</div>
             <svg class="price__image" width="31" height="21" viewBox="0 0 31 21" fill="none"
               xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="./img/icons/sprite.svg#checkbox-on"></use>
               <path
                 d="M30.5559 0.429509C30.4134 0.293412 30.2439 0.185389 30.0571 0.111671C29.8703 0.0379536 29.67 0 29.4676 0C29.2653 0 29.065 0.0379536 28.8782 0.111671C28.6914 0.185389 28.5219 0.293412 28.3794 0.429509L10.3744 17.4958L2.5777 10.1097C2.28714 9.85325 1.90283 9.71362 1.50573 9.72025C1.10864 9.72689 0.72977 9.87928 0.448939 10.1453C0.168108 10.4114 0.00724504 10.7703 0.0002388 11.1464C-0.00676744 11.5226 0.140631 11.8867 0.41138 12.1619L9.29124 20.5741C9.4331 20.7094 9.60187 20.8167 9.7878 20.8898C9.97372 20.9629 10.1731 21.0004 10.3744 21C10.7806 20.9986 11.1698 20.8456 11.4576 20.5741L30.5559 2.48172C30.8405 2.20822 31 1.83963 31 1.45561C31 1.0716 30.8405 0.703003 30.5559 0.429509Z"
                 fill="#3DC644" />
@@ -500,10 +508,10 @@
       </div>
     </div>
   </footer>
-  <script src="./js/menu.js"></script>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=1bf215ba-9474-4f2f-aafe-705892ec1e59&lang=ru_RU"
+  <script defer src="./js/menu.js"></script>
+  <script defer src="https://api-maps.yandex.ru/2.1/?apikey=1bf215ba-9474-4f2f-aafe-705892ec1e59&lang=ru_RU"
     type="text/javascript"></script>
-  <script src="./js/map.js"></script>
+  <script defer src="./js/map.js"></script>
 </body>
 
 </html>
