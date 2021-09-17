@@ -79,13 +79,6 @@
   }
 }
 
-.effect__svg-24hors-tablets {
-  @include desktop {
-    display: none;
-  }
-}
-
-
 .effect__svg-24hors-desktop {
   @include tablets {
     display: none;
