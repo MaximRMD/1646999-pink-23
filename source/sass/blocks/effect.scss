@@ -1,4 +1,3 @@
-
 .effect__link {
   font-weight: 400;
   font-size: 18px;
@@ -76,6 +75,12 @@
   @include desktop {
     display: flex;
     margin-bottom: 69px;
+  }
+}
+
+.effect__svg-24hors-tablets {
+  @include desktop {
+    display: none;
   }
 }
 
